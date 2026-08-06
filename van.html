@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ôn Thi Môn Ngữ Văn THPT 2027</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <h1>📖 ÔN THI MÔN NGỮ VĂN 2027</h1>
+            <button id="theme-toggle" class="btn-toggle" onclick="toggleTheme()">🌙 Chế độ tối</button>
+        </div>
+        <p>Tổng hợp Đọc hiểu & Kỹ năng làm văn Nghị luận</p>
+    </header>
+
+    <div class="top-bar">
+        <a href="index.html" class="back-btn">⬅️ Quay lại Trang chủ</a>
+        <input type="text" id="search-input" placeholder="🔍 Tìm chủ đề..." onkeyup="searchTopic()">
+    </div>
+
+    <div class="math-container">
+
+        <!-- CHƯƠNG 1 -->
+        <section class="grade-section">
+            <h2 class="grade-title">📌 I. CÁC BIỆN PHÁP TU TỪ (RẤT HAY HỎI ĐỌC HIỂU)</h2>
+            
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>1. So sánh & Ẩn dụ & Hoán dụ</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p><strong>So sánh:</strong> Đối chiếu 2 sự vật có nét tương đồng (từ nối: như, là, tựa...). <br>👉 <em>Tác dụng:</em> Tăng sức gợi hình, gợi cảm, làm nổi bật đặc điểm đối tượng.</p>
+                    <p><strong>Ẩn dụ:</strong> Gọi tên sự vật A bằng tên sự vật B dựa trên mối quan hệ <em>tương đồng</em> (ẩn đi đối tượng A). <br>👉 <em>Tác dụng:</em> Gợi ý nghĩa sâu sắc, tăng tính biểu cảm, tạo chiều sâu cho câu văn.</p>
+                    <p><strong>Hoán dụ:</strong> Gọi tên sự vật A bằng tên sự vật B dựa trên mối quan hệ <em>gần gũi/điền hình</em> (lấy bộ phận chỉ toàn thể, lấy vật chứa đựng chỉ vật bị chứa đựng...). <br>👉 <em>Tác dụng:</em> Làm nổi bật một khía cạnh, đặc điểm tiêu biểu của đối tượng.</p>
+                    <div class="exercise-box">
+                        ✏️ <strong>Ví dụ phân tích:</strong> "Thuyền về có nhớ bến dòng".<br>
+                        <em>Ẩn dụ:</em> "Thuyền" (chỉ người đi xa/người con trai), "Bến" (chỉ người ở lại/người con gái) ⇒ Tăng tính biểu cảm, diễn tả sự thủy chung trong tình cảm.
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>2. Điệp ngữ, Nhân hóa, Liệt kê, Đảo ngữ</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                    </div>
+                <div class="topic-content">
+                    <p><strong>Điệp ngữ:</strong> Lặp lại từ/cụm từ nhiều lần. <br>👉 <em>Tác dụng:</em> Nhấn mạnh ý, tạo nhịp điệu tha thiết, hài hòa cho câu thơ/câu văn.</p>
+                    <p><strong>Nhân hóa:</strong> Gán thuộc tính, hành động của con người cho vật/con vật. <br>👉 <em>Tác dụng:</em> Làm sự vật trở nên gần gũi, sinh động, có tâm hồn.</p>
+                    <p><strong>Liệt kê:</strong> Sắp xếp nối tiếp các từ/cụm từ cùng loại. <br>👉 <em>Tác dụng:</em> Diễn tả đầy đủ, chi tiết, tăng sức biểu cảm và làm rõ nội dung.</p>
+                    <p><strong>Đảo ngữ:</strong> Thay đổi trật tự từ trong câu (đưa vị ngữ/tính từ lên trước chủ ngữ). <br>👉 <em>Tác dụng:</em> Nhấn mạnh hình ảnh, cảm xúc hoặc trạng thái của đối tượng.</p>
+                    <div class="exercise-box">
+                        ✏️ <strong>Ví dụ phân tích:</strong> "Lom khom dưới núi đèo vài chú".<br>
+                        <em>Đảo ngữ:</em> Đưa "Lom khom" lên đầu câu ⇒ Nhấn mạnh dáng vẻ nhỏ bé, vất vả của con người giữa thiên nhiên đèo núi hẻo lánh.
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>3. Câu hỏi tu từ, Nói quá, Nói giảm nói tránh</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p><strong>Câu hỏi tu từ:</strong> Hỏi nhưng không tìm câu trả lời (đáp án đã nằm ngay trong câu hỏi). <br>👉 <em>Tác dụng:</em> Gợi suy nghĩ, bộc lộ cảm xúc sâu sắc, nhấn mạnh vấn đề.</p>
+                    <p><strong>Nói quá (Phóng đại):</strong> Phóng đại quy mô, tính chất của sự vật. <br>👉 <em>Tác dụng:</em> Nhấn mạnh, gây ấn tượng mạnh, tăng tính biểu cảm.</p>
+                    <p><strong>Nói giảm nói tránh:</strong> Dùng cách diễn đạt tế nhị, gián tiếp. <br>👉 <em>Tác dụng:</em> Thể hiện sự lịch sự, giảm bớt đau thương, mất mát, không gây cảm giác thô tục.</p>
+                    <div class="exercise-box">
+                        ✏️ <strong>Ví dụ phân tích:</strong> "Bác đã đi rồi sao Bác ơi!".<br>
+                        <em>Nói giảm nói tránh:</em> Từ "đi" thay cho từ "chết" ⇒ Giảm bớt nỗi đau thương, thể hiện sự kính trọng vô hạn đối với Bác.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CHƯƠNG 2 -->
+        <section class="grade-section">
+            <h2 class="grade-title">📌 II. PHƯƠNG THỨC BIỂU ĐẠT & PHONG CÁCH NGÔN NGỮ</h2>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>1. Phương thức biểu đạt (6 phương thức)</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p>Dấu hiệu nhận biết từng phương thức trong đoạn văn:</p>
+                    <ul>
+                        <li><strong>Tự sự:</strong> Có cốt truyện, diễn biến sự việc, nhân vật, hành động (kể chuyện).</li>
+                        <li><strong>Miêu tả:</strong> Dùng từ ngữ gợi hình ảnh, màu sắc, đường nét, âm thanh để tái hiện sự vật/cảnh vật.</li>
+                        <li><strong>Biểu cảm:</strong> Bộc lộ trực tiếp cảm xúc, tâm tư, tình cảm của tác giả (thường có trong thơ, tản văn).</li>
+                        <li><strong>Nghị luận:</strong> Bàn luận đúng/sai, nêu quan điểm, lý lẽ, dẫn chứng để thuyết phục người đọc.</li>
+                        <li><strong>Thuyết minh:</strong> Cung cấp tri thức khách quan, chính xác về đặc điểm, nguồn gốc của sự vật.</li>
+                        <li><strong>Hành chính - Công vụ:</strong> Văn bản mang tính pháp lý (đơn từ, thông tư, nghị định, hợp đồng).</li>
+                    </ul>
+                    <div class="exercise-box">
+                        ✏️ <strong>Mẹo làm bài:</strong> Nếu đề hỏi "Phương thức biểu đạt <em>chính</em>" ➔ Chỉ chọn 1 phương thức duy nhất!
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>2. Phong cách ngôn ngữ (6 phong cách)</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p>Dấu hiệu nhận biết xuất xứ đoạn trích:</p>
+                    <ul>
+                        <li><strong>Sinh hoạt:</strong> Khẩu ngữ, lời nói hằng ngày, hội thoại, nhật ký, thư từ.</li>
+                        <li><strong>Nghệ thuật:</strong> Dùng trong tác phẩm văn học (thơ, truyện, kí, kịch), giàu hình ảnh và cảm xúc.</li>
+                        <li><strong>Báo chí:</strong> Bản tin, phóng sự, phỏng vấn (cung cấp thông tin thời sự tính cập nhật cao).</li>
+                        <li><strong>Chính luận:</strong> Tuyên ngôn, phát biểu, bài bình luận chính trị - xã hội (bàn về tư tưởng, quan điểm).</li>
+                        <li><strong>Khoa học:</strong> Sử dụng thuật ngữ chuyên ngành, định lý, công thức (trong sách giáo khoa, nghiên cứu).</li>
+                        <li><strong>Hành chính:</strong> Dùng trong công văn, đơn từ, luật lệ, thông báo chính thức.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- CHƯƠNG 3 -->
+        <section class="grade-section">
+            <h2 class="grade-title">📌 III. THAO TÁC LẬP LUẬN, THỂ LOẠI & LIÊN KẾT</h2>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>1. Thao tác lập luận (6 thao tác)</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <ul>
+                        <li><strong>Giải thích:</strong> Mở rộng, làm rõ khái niệm ("Là gì?", "Nghĩa là thế nào?").</li>
+                        <li><strong>Phân tích:</strong> Chia nhỏ đối tượng thành nhiều khía cạnh để xem xét sâu sắc.</li>
+                        <li><strong>Chứng minh:</strong> Dùng dẫn chứng thực tế/số liệu cụ thể để chứng tỏ nhận định là đúng.</li>
+                        <li><strong>Bình luận:</strong> Đánh giá, nhận xét đúng/sai, tốt/xấu và mở rộng bài học ứng dụng.</li>
+                        <li><strong>So sánh:</strong> Đối chiếu 2 hay nhiều đối tượng để chỉ ra điểm tương đồng/khác biệt.</li>
+                        <li><strong>Bác bỏ:</strong> Chỉ ra điểm sai lầm, phi lý của một quan điểm khác để khẳng định ý kiến đúng.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>2. Thể loại, Ngôi kể & Điểm nhìn</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p><strong>Thể loại:</strong> 
+                        <ul>
+                            <li><em>Thơ:</em> Thơ tự do, 5 chữ, 7 chữ, Lục bát, Song thất lục bát...</li>
+                            <li><em>Văn xuôi:</em> Truyện ngắn, Kí (tùy bút, tản văn), Kịch...</li>
+                        </ul>
+                    </p>
+                    <p><strong>Ngôi kể:</strong>
+                        <ul>
+                            <li><em>Ngôi thứ nhất (tôi, ta, chúng tôi):</em> Trực tiếp bộc lộ cảm xúc, tăng độ tin cậy, chân thực.</li>
+                            <li><em>Ngôi thứ ba (anh, chị, nó, hắn, tên nhân vật):</em> Người kể giấu mặt, quan sát khách quan, linh hoạt.</li>
+                        </ul>
+                    </p>
+                    <p><strong>Điểm nhìn trần thuật:</strong> Góc nhìn của nhân vật hoặc góc nhìn của người kể chuyện toàn tri.</p>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>3. Phép liên kết & Phép Logic</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p><strong>Phép liên kết hình thức:</strong>
+                        <ul>
+                            <li><em>Phép lặp:</em> Lặp lại từ ngữ ở câu sau.</li>
+                            <li><em>Phép thế:</em> Dùng đại từ/từ đồng nghĩa (nó, ấy, điều đó...) để thay thế.</li>
+                            <li><em>Phép nối:</em> Dùng quan hệ từ (Tuy nhiên, Bởi vì, Vì vậy, Ngoài ra...).</li>
+                            <li><em>Phép đồng nghĩa/trái nghĩa:</em> Dùng các từ cùng nhóm ý nghĩa hoặc đối lập.</li>
+                        </ul>
+                    </p>
+                    <p><strong>Các phép Logic trong văn bản:</strong> Quan hệ Nguyên nhân -> Kết quả, Tăng tiến, Đối lập, So sánh.</p>
+                </div>
+            </div>
+        </section>
+        <!-- CHƯƠNG 4 -->
+        <section class="grade-section">
+            <h2 class="grade-title">📌 IV. DÀN Ý BÀI VĂN NGHỊ LUẬN XÃ HỘI (CỰC CHUẨN)</h2>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>Công thức dựng bài Nghị luận xã hội (200 chữ / Bài văn)</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p>Áp dụng quy trình 7 bước đắt giá giúp bài viết mạch lạc, đạt điểm tối đa:</p>
+                    <ol>
+                        <li><strong>Nêu vấn đề (Mở đoạn):</strong> Dẫn dắt ngắn gọn, giới thiệu trực tiếp tư tưởng/hiện tượng cần bàn luận.</li>
+                        <li><strong>Giải thích ("Đó là gì?"):</strong> Trả lời ngắn gọn khái niệm trọng tâm của đề bài là gì.</li>
+                        <li><strong>Phân tích (Bàn luận):</strong> Tại sao vấn đề đó lại quan trọng/đúng đắn? Nó mang lại ý nghĩa gì cho cá nhân và xã hội?</li>
+                        <li><strong>Dẫn chứng:</strong> Nêu 1 - 2 dẫn chứng tiêu biểu, thực tế, mang tính thời sự (người thật, việc thật).</li>
+                        <li><strong>Phản đề (Phản bác):</strong> Phê phán những biểu hiện trái ngược, những người có lối sống lệch chuẩn.</li>
+                        <li><strong>Bài học nhận thức & Hành động:</strong> Rút ra bài học cho bản thân ("Tôi cần làm gì?").</li>
+                        <li><strong>Khẳng định (Kết đoạn):</strong> Chốt lại giá trị của vấn đề nghị luận bằng một câu ấn tượng.</li>
+                    </ol>
+                    <div class="exercise-box">
+                        ✏️ <strong>Mẹo nhỏ:</strong> Bài viết 200 chữ không xuống dòng giữa chừng, tập trung làm rõ 1 khía cạnh (ý nghĩa, giải pháp hoặc nguyên nhân) theo yêu cầu đề bài!
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div> <!-- Đóng math-container -->
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            let btn = document.getElementById('theme-toggle');
+            if (document.body.classList.contains('dark-mode')) {
+                btn.textContent = '☀️ Chế độ sáng';
+            } else {
+                btn.textContent = '🌙 Chế độ tối';
+            }
+        }
+
+        function searchTopic() {
+            let input = document.getElementById('search-input').value.toLowerCase().trim();
+            let cards = document.getElementsByClassName('topic-card');
+
+            for (let i = 0; i < cards.length; i++) {
+                let text = cards[i].innerText.toLowerCase();
+                if (text.includes(input)) {
+                    cards[i].style.display = "block";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
