@@ -1,225 +1,251 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ôn Thi Môn Toán THPT 2027</title>
-    <style>
-        :root {
-            --bg-color: #e0f7fa;
-            --card-bg: #ffffff;
-            --text-color: #333333;
-            --primary-color: #00838f;
-        }
-        body.dark-mode {
-            --bg-color: #121212;
-            --card-bg: #1e1e1e;
-            --text-color: #e0e0e0;
-            --primary-color: #80deea;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 20px;
-            transition: all 0.3s ease;
-        }
-        header {
-            background-color: #00838f;
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-        }
-        .header-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .btn-toggle {
-            background: white;
-            color: #333;
-            border: none;
-            padding: 8px 15px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        .top-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 900px;
-            margin: 20px auto 10px;
-        }
-        .back-btn {
-            text-decoration: none;
-            color: var(--primary-color);
-            font-weight: bold;
-        }
-        #search-input {
-            padding: 8px 15px;
-            border-radius: 20px;
-            border: 1px solid #ccc;
-            width: 250px;
-            outline: none;
-        }
-        .math-container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .grade-title {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 5px;
-            margin-top: 30px;
-        }
-        .topic-card {
-            background-color: var(--card-bg);
-            border-radius: 10px;
-            padding: 15px 20px;
-            margin: 15px 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-        .topic-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .topic-header h3 {
-            margin: 0;
-            color: #00838f;
-        }
-        .check-done {
-            font-size: 14px;
-            cursor: pointer;
-        }
-        .exercise-box {
-            background-color: rgba(0, 131, 143, 0.08);
-            border-left: 4px solid var(--primary-color);
-            padding: 10px;
-            margin-top: 10px;
-            border-radius: 4px;
-        }
-    </style>
-    <!-- LỚP 11 -->
-        <section class="grade-section">
-            <h2 class="grade-title">📌 CHƯƠNG TRÌNH LỚP 11</h2>
+✏️ <strong>Bài tập mẫu:</strong> Giải bất phương trình bậc hai: x² - 5x + 6 ≤ 0.
+                </div>
+            </div>
+        </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>1. Hàm số & Phương trình lượng giác</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Các hàm y = sin(x), cos(x), tan(x), cot(x).</p>
-                    <p><strong>Công thức:</strong> sin²(x) + cos²(x) = 1; sin(x) = sin(α) ⇔ x = α + k2π hoặc x = π - α + k2π.</p>
-                    <div class="exercise-box">✏️ <strong>Bài tập mẫu:</strong> Giải phương trình sin(x) = 1/2.</div>
+        <!-- Bài 4 -->
+        <div class="topic-card">
+            <div class="topic-header">
+                <h3>4. Véc-tơ & Các phép toán Véc-tơ</h3>
+                <label class="check-done"><input type="checkbox"> Đã học</label>
+            </div>
+            <div class="topic-content">
+                <p><strong>Khái niệm:</strong> Cho véc-tơ a = (x₁; y₁) và b = (x₂; y₂).</p>
+                <p><strong>Công thức:</strong> Tích vô hướng: a·b = x₁x₂ + y₁y₂. Độ dài AB = √[(x<sub>B</sub> - x<sub>A</sub>)² + (y<sub>B</sub> - y<sub>A</sub>)²].</p>
+                <div class="exercise-box">
+                    ✏️ <strong>Bài tập mẫu:</strong> Cho A(1; 2) và B(4; 6). Tính tọa độ véc-tơ AB và độ dài đoạn AB.
                 </div>
             </div>
+        </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>2. Dãy số, Cấp số cộng & Cấp số nhân</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> CSC cộng công sai d. CSN nhân công bội q.</p>
-                    <p><strong>Công thức:</strong> CSC: u<sub>n</sub> = u₁ + (n-1)d. CSN: u<sub>n</sub> = u₁·q<sup>n-1</sup>.</p>
-                    <div class="exercise-box">✏️ <strong>Bài tập mẫu:</strong> Cho u₁ = 3, d = 2. Tìm u₁₀ của CSC.</div>
+        <!-- Bài 5 -->
+        <div class="topic-card">
+            <div class="topic-header">
+                <h3>5. Phương pháp tọa độ trong mặt phẳng (Oxy)</h3>
+                <label class="check-done"><input type="checkbox"> Đã học</label>
+            </div>
+            <div class="topic-content">
+                <p><strong>Khái niệm:</strong> Phương trình đường thẳng Ax + By + C = 0. Phương trình đường tròn (x - a)² + (y - b)² = R².</p>
+                <p><strong>Công thức:</strong> Khoảng cách từ M(x₀; y₀) đến d: h = |Ax₀ + By₀ + C| / √(A² + B²).</p>
+                <div class="exercise-box">
+                    ✏️ <strong>Bài tập mẫu:</strong> Viết phương trình đường tròn tâm I(1; 2) bán kính R = 3.
                 </div>
             </div>
+        </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>3. Xác suất & Thống kê</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Xác suất biến cố P(A) = n(A) / n(Ω).</p>
-                    <div class="exercise-box">✏️ <strong>Bài tập mẫu:</strong> Gieo xúc xắc 6 mặt, tính xác suất ra mặt chẵn.</div>
-                </div>
-            </div>
-        </section>
-        <!-- LỚP 11 -->
-        <section class="grade-section">
-            <h2 class="grade-title">📌 CHƯƠNG TRÌNH LỚP 11</h2>
+    </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>1. Hàm số & Phương trình lượng giác</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Các hàm y = sin(x), cos(x), tan(x), cot(x).</p>
-                    <p><strong>Công thức:</strong> sin²(x) + cos²(x) = 1; sin(x) = sin(α) ⇔ x = α + k2π hoặc x = π - α + k2π.</p>
-                    <div class="exercise-box">✏️ <strong>Bài tập mẫu:</strong> Giải phương trình sin(x) = 1/2.</div>
-                </div>
-            </div>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            let btn = document.getElementById('theme-toggle');
+            if (document.body.classList.contains('dark-mode')) {
+                btn.textContent = '☀️ Chế độ sáng';
+            } else {
+                btn.textContent = '🌙 Chế độ tối';
+            }
+        }
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>2. Dãy số, Cấp số cộng & Cấp số nhân</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> CSC cộng công sai d. CSN nhân công bội q.</p>
-                    <p><strong>Công thức:</strong> CSC: u<sub>n</sub> = u₁ + (n-1)d. CSN: u<sub>n</sub> = u₁·q<sup>n-1</sup>.</p>
-                    <div class="exercise-box">✏️ <strong>Bài tập mẫu:</strong> Cho u₁ = 3, d = 2. Tìm u₁₀ của CSC.</div>
-                </div>
-            </div>
+        function searchTopic() {
+            let input = document.getElementById('search-input').value.toLowerCase().trim();
+            let cards = document.getElementsByClassName('topic-card');
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>3. Xác suất & Thống kê</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Xác suất biến cố P(A) = n(A) / n(Ω).</p>
-                    <div class="exercise-box">✏️ <strong>Bài tập mẫu:</strong> Gieo xúc xắc 6 mặt, tính xác suất ra mặt chẵn.</div>
-                </div>
-            </div>
-        </section>
-        <!-- LỚP 10 -->
-        <section class="grade-section">
-            <h2 class="grade-title">📌 CHƯƠNG TRÌNH LỚP 10</h2>
-            
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>1. Hàm số bậc nhất & Bậc hai</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Hàm số bậc hai y = ax² + bx + c (a ≠ 0) có đồ thị Parabol đỉnh I(-b/2a; -Δ/4a).</p>
-                    <p><strong>Công thức:</strong> Trục đối xứng x = -b/2a.</p>
-                    <div class="exercise-box">✏️ <strong>Bài tập mẫu:</strong> Tìm đỉnh Parabol y = x² - 4x + 3.</div>
+            for (let i = 0; i < cards.length; i++) {
+                let text = cards[i].innerText.toLowerCase();
+                if (text.includes(input)) {
+                    cards[i].style.display = "block";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+<p><strong>Khái niệm:</strong> Đạo hàm của hàm hợp, đạo hàm các hàm số sơ cấp.</p>
+                <p><strong>Công thức:</strong> (x<sup>n</sup>)' = n·x<sup>n-1</sup>; (u·v)' = u'v + uv'; PTTT tại M(x₀; y₀): y = f'(x₀)(x - x₀) + y₀.</p>
+                <div class="exercise-box">
+                    ✏️ <strong>Bài tập mẫu:</strong> Viết phương trình tiếp tuyến của đồ thị y = x³ - 3x tại điểm có hoành độ x₀ = 2.
                 </div>
             </div>
+        </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>2. Phương trình, Bất phương trình & Hệ PTT</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Xét dấu tam thức bậc hai ax² + bx + c theo quy tắc "Trong trái ngoài cùng".</p>
-                    <p><strong>Công thức:</strong> Δ = b² - 4ac. Nghiệm x = (-b ± √Δ) / 2a.</p>
-                    <div class="exercise-box">✏️ <strong>Bài tập mẫu:</strong> Giải bất phương trình x² - 5x + 6 ≤ 0.</div>
+        <!-- Bài 5 -->
+        <div class="topic-card">
+            <div class="topic-header">
+                <h3>5. Quan hệ Vuông góc & Khai thác Khoảng cách</h3>
+                <label class="check-done"><input type="checkbox"> Đã học</label>
+            </div>
+            <div class="topic-content">
+                <p><strong>Khái niệm:</strong> Đường thẳng ⊥ Mặt phẳng, Góc giữa đường thẳng và mặt phẳng, Khoảng cách từ điểm đến mặt phẳng.</p>
+                <p><strong>Công thức:</strong> d ⊥ (P) khi d ⊥ với 2 đường thẳng cắt nhau trong (P). Định lý 3 đường vuông góc.</p>
+                <div class="exercise-box">
+                    ✏️ <strong>Bài tập mẫu:</strong> Cho hình chóp S.ABC có SA ⊥ (ABC) và đáy ABC vuông tại B. Tính khoảng cách từ A đến (SBC).
                 </div>
             </div>
+        </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>3. Véc tơ & Hình học tọa độ</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Véc tơ a = (x₁; y₁), b = (x₂; y₂).</p>
-                    <p><strong>Công thức:</strong> Tích vô hướng a·b = x₁x₂ + y₁y₂. Độ dài AB = √[(x<sub>B</sub>-x<sub>A</sub>)² + (y<sub>B</sub>-y<sub>A</sub>)²].</p>
-                    <div class="exercise-box">✏️ <strong>Bài tập mẫu:</strong> Tính khoảng cách giữa A(1;2) và B(4;6).</div>
+        <!-- Bài 6 -->
+        <div class="topic-card">
+            <div class="topic-header">
+                <h3>6. Thống kê & Xác suất biến cố</h3>
+                <label class="check-done"><input type="checkbox"> Đã học</label>
+            </div>
+            <div class="topic-content">
+                <p><strong>Khái niệm:</strong> Phép thử, không gian mẫu Ω, biến cố xung khắc, độc lập.</p>
+                <p><strong>Công thức:</strong> Xác suất P(A) = n(A) / n(Ω). Công thức cộng P(A∪B) và công thức nhân P(A∩B).</p>
+                <div class="exercise-box">
+                    ✏️ <strong>Bài tập mẫu:</strong> Rút ngẫu nhiên 2 thẻ từ hộp 10 thẻ (đánh số 1-10). Tính xác suất để cả 2 thẻ đều là số chẵn.
                 </div>
             </div>
-        </section>
+        </div>
+        <!-- CHƯƠNG TRÌNH LỚP 12 -->
+        <h2 class="grade-title">🔥 CHƯƠNG TRÌNH LỚP 12</h2>
+
+        <!-- Bài 1 -->
+        <div class="topic-card">
+            <div class="topic-header">
+                <h3>1. Ứng dụng Đạo hàm để Khảo sát & Vẽ Đồ thị Hàm số</h3>
+                <label class="check-done"><input type="checkbox"> Đã học</label>
+            </div>
+            <div class="topic-content">
+                <p><strong>Tính đơn điệu:</strong> Hàm đồng biến trên K ⇔ y' ≥ 0 với mọi x ∈ K. Hàm nghịch biến ⇔ y' ≤ 0.</p>
+                <p><strong>Cực trị:</strong> x₀ là điểm cực trị khi y' đổi dấu qua x₀ (Đổi từ + sang - là Cực đại, từ - sang + là Cực tiểu).</p>
+                <p><strong>Tiệm cận:</strong> 
+                    <ul>
+                        <li>Tiệm cận đứng: x = x₀ nếu lim<sub>x→x₀</sub> y = ±∞ (thường là nghiệm của mẫu).</li>
+                        <li>Tiệm cận ngang: y = y₀ nếu lim<sub>x→±∞</sub> y = y₀.</li>
+                    </ul>
+                </p>
+                <div class="exercise-box">
+                    ✏️ <strong>Bài tập mẫu:</strong> Tìm các khoảng đồng biến, nghịch biến và cực trị của hàm số y = x³ - 3x² + 2.
+                </div>
+            </div>
+        </div>
+
+        <!-- Bài 2 -->
+        <div class="topic-card">
+            <div class="topic-header">
+                <h3>2. Hàm số Mũ & Hàm số Logarit</h3>
+                <label class="check-done"><input type="checkbox"> Đã học</label>
+            </div>
+            <div class="topic-content">
+                <p><strong>Đồng dạng & Đồ thị:</strong> y = a<sup>x</sup> và y = log<sub>a</sub>x (Điều kiện: a > 0, a ≠ 1). Đồng biến khi a > 1, nghịch biến khi 0 < a < 1.</p>
+                <p><strong>Công thức trọng tâm:</strong> 
+                    <ul>
+                        <li>log<sub>a</sub>(b·c) = log<sub>a</sub>b + log<sub>a</sub>c ; log<sub>a</sub>(b/c) = log<sub>a</sub>b - log<sub>a</sub>c</li>
+                        <li>log<sub>a</sub>b<sup>k</sup> = k·log<sub>a</sub>b ; log<sub>a<sup>k</sup></sub>b = (1/k)·log<sub>a</sub>b</li>
+                        <li>Đạo hàm: (a<sup>x</sup>)' = a<sup>x</sup>·ln(a) ; (log<sub>a</sub>x)' = 1 / (x·ln a)</li>
+                    </ul>
+                </p>
+                <div class="exercise-box">
+                    ✏️ <strong>Bài tập mẫu:</strong> Giải phương trình log₂(x - 1) + log₂(x + 1) = 3.
+                </div>
+            </div>
+        </div>
+        <!-- Bài 3 -->
+        <div class="topic-card">
+            <div class="topic-header">
+                <h3>3. Nguyên hàm & Tích phân</h3>
+                <label class="check-done"><input type="checkbox"> Đã học</label>
+            </div>
+            <div class="topic-content">
+                <p><strong>Khái niệm:</strong> F(x) là nguyên hàm của f(x) nếu F'(x) = f(x). Tích phân $\int_{a}^{b} f(x)dx = F(b) - F(a)$.</p>
+                <p><strong>Bảng nguyên hàm cơ bản:</strong>
+                    <ul>
+                        <li>$\int x^n dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1)$</li>
+                        <li>$\int \frac{1}{x} dx = \ln|x| + C$</li>
+                        <li>$\int e^x dx = e^x + C \quad ; \quad \int a^x dx = \frac{a^x}{\ln a} + C$</li>
+                        <li>$\int \sin x dx = -\cos x + C \quad ; \quad \int \cos x dx = \sin x + C$</li>
+                    </ul>
+                </p>
+                <p><strong>Phương pháp giải:</strong> Đổi biến số $u = u(x)$ hoặc Tích phân từng phần $\int u \, dv = uv - \int v \, du$.</p>
+                <div class="exercise-box">
+                    ✏️ <strong>Bài tập mẫu:</strong> Tính tích phân $I = \int_{0}^{1} (2x + 1)e^x dx$.
+                </div>
+            </div>
+        </div>
+
+        <!-- Bài 4 -->
+        <div class="topic-card">
+            <div class="topic-header">
+                <h3>4. Phương pháp Tọa độ trong Không gian (Oxyz)</h3>
+                <label class="check-done"><input type="checkbox"> Đã học</label>
+            </div>
+            <div class="topic-content">
+                <p><strong>Tọa độ Véc-tơ & Điểm:</strong> $\vec{a} = (x_1; y_1; z_1)$, $\vec{b} = (x_2; y_2; z_2)$. Tích vô hướng $\vec{a} \cdot \vec{b} = x_1 x_2 + y_1 y_2 + z_1 z_2$.</p>
+                <p><strong>Mặt phẳng $(P)$:</strong> Phương trình tổng quát $Ax + By + Cz + D = 0$ với VTPT $\vec{n} = (A; B; C)$.
+                    <ul>
+                        <li>Khoảng cách từ $M(x_0; y_0; z_0)$ đến $(P)$: $d(M, P) = \frac{|Ax_0 + By_0 + Cz_0 + D|}{\sqrt{A^2 + B^2 + C^2}}$</li>
+                    </ul>
+                </p>
+                <p><strong>Đường thẳng $\Delta$:</strong> Phương trình chính tắc $\frac{x - x_0}{a} = \frac{y - y_0}{b} = \frac{z - z_0}{c}$ với VTCP $\vec{u} = (a; b; c)$.</p>
+                <p><strong>Mặt cầu $(S)$:</strong> $(x - a)^2 + (y - b)^2 + (z - c)^2 = R^2$ có tâm $I(a; b; c)$, bán kính $R$.</p>
+                <div class="exercise-box">
+                    ✏️ <strong>Bài tập mẫu:</strong> Lập phương trình mặt phẳng $(P)$ đi qua $A(1; 2; -1)$ và vuông góc với đường thẳng $d: \frac{x-1}{2} = \frac{y}{1} = \frac{z+2}{-3}$.
+                </div>
+            </div>
+        </div>
+        <!-- Bài 5 -->
+        <div class="topic-card">
+            <div class="topic-header">
+                <h3>5. Xác suất Có điều kiện & Công thức Xác suất Toàn phần</h3>
+                <label class="check-done"><input type="checkbox"> Đã học</label>
+            </div>
+            <div class="topic-content">
+                <p><strong>Xác suất có điều kiện:</strong> Xác suất của biến cố A với điều kiện biến cố B đã xảy ra: $P(A|B) = \frac{P(A \cap B)}{P(B)}$ (với $P(B) > 0$).</p>
+                <p><strong>Công thức Nhân xác suất:</strong> $P(A \cap B) = P(B) \cdot P(A|B) = P(A) \cdot P(B|A)$.</p>
+                <p><strong>Công thức Xác suất toàn phần:</strong> Cho hệ biến cố đầy đủ $\{B_1, B_2, ..., B_n\}$:</p>
+                <p style="text-align: center;">$P(A) = \sum_{i=1}^{n} P(B_i) \cdot P(A|B_i)$</p>
+                <p><strong>Công thức Bayes:</strong> $P(B_k|A) = \frac{P(B_k) \cdot P(A|B_k)}{P(A)}$.</p>
+                <div class="exercise-box">
+                    ✏️ <strong>Bài tập mẫu:</strong> Một hộp có 5 bi xanh và 3 bi đỏ. Lấy lần lượt không hoàn lại 2 viên bi. Tính xác suất để viên bi thứ 2 là bi đỏ.
+                </div>
+            </div>
+        </div>
+
+        <!-- Bài 6 -->
+        <div class="topic-card">
+            <div class="topic-header">
+                <h3>6. Các đặc trưng Đo độ tán sắc của Mẫu số liệu Ghép nhóm</h3>
+                <label class="check-done"><input type="checkbox"> Đã học</label>
+            </div>
+            <div class="topic-content">
+                <p><strong>Khoảng biến thiên & Khoảng tứ phân vị:</strong> Khoảng biến thiên $R = x_{max} - x_{min}$. Khoảng tứ phân vị $\Delta_Q = Q_3 - Q_1$.</p>
+                <p><strong>Phương sai ($s^2$) & Độ lệch chuẩn ($s$):</strong> Đo mức độ lệch của các số liệu so với số trung bình $\bar{x}$.</p>
+                <p style="text-align: center;">$s^2 = \frac{1}{n} \sum_{i=1}^{k} f_i (x_i - \bar{x})^2 \quad ; \quad s = \sqrt{s^2}$</p>
+                <div class="exercise-box">
+                    ✏️ <strong>Bài tập mẫu:</strong> Tính phương sai và độ lệch chuẩn của bảng số liệu điểm kiểm tra Toán ghép nhóm của lớp 12A.
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- Đóng math-container -->
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            let btn = document.getElementById('theme-toggle');
+            if (document.body.classList.contains('dark-mode')) {
+                btn.textContent = '☀️ Chế độ sáng';
+            } else {
+                btn.textContent = '🌙 Chế độ tối';
+            }
+        }
+
+        function searchTopic() {
+        let input = document.getElementById('search-input').value.toLowerCase().trim();
+            let cards = document.getElementsByClassName('topic-card');
+
+            for (let i = 0; i < cards.length; i++) {
+                let text = cards[i].innerText.toLowerCase();
+                if (text.includes(input)) {
+                    cards[i].style.display = "block";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
