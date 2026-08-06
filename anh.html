@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ôn Thi Môn Tiếng Anh THPT 2027</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <h1>🌐 ÔN THI MÔN TIẾNG ANH 2027</h1>
+            <button id="theme-toggle" class="btn-toggle" onclick="toggleTheme()">🌙 Chế độ tối</button>
+        </div>
+        <p>Bí kíp lấy gốc Tiếng Anh & Mẹo làm bài thi THPT Quốc Gia</p>
+    </header>
+
+    <div class="top-bar">
+        <a href="index.html" class="back-btn">⬅️ Quay lại Trang chủ</a>
+        <input type="text" id="search-input" placeholder="🔍 Tìm chuyên đề ngữ pháp..." onkeyup="searchTopic()">
+    </div>
+
+    <div class="math-container">
+
+        <!-- CHƯƠNG 1 -->
+        <section class="grade-section">
+            <h2 class="grade-title">📌 I. NGHỆ THUẬT CHIA THÌ & ĐỘNG TỪ (TRỌNG TÂM ĐỀ THI)</h2>
+            
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>1. Mẹo chia 4 thì cơ bản nhất (Hiện tại - Quá khứ - Tương lai)</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p><strong>Bản chất:</strong> Thì trong tiếng Anh chỉ là việc báo hiệu hành động xảy ra <em>khi nào</em>.</p>
+                    <ul>
+                        <li><strong>Hiện tại đơn (S + V/V_es/s):</strong> Thói quen, sự thật hiển nhiên. <br>👉 <em>Dấu hiệu:</em> always, usually, often, every day...</li>
+                        <li><strong>Quá khứ đơn (S + V2/V_ed):</strong> Xảy ra và dứt điểm trong quá khứ. <br>👉 <em>Dấu hiệu:</em> yesterday, last (week/year), ago, in + năm quá khứ.</li>
+                        <li><strong>Hiện tại hoàn thành (S + have/has + V3/V_ed):</strong> Xảy ra trong quá khứ nhưng kết quả kéo dài đến hiện tại. <br>👉 <em>Dấu hiệu:</em> since (+ mốc thời gian), for (+ khoảng thời gian), already, ever, never, just.</li>
+                        <li><strong>Tương lai đơn (S + will + V_nguyên thể):</strong> Sẽ xảy ra trong tương lai. <br>👉 <em>Dấu hiệu:</em> tomorrow, next (week/month), in + năm tương lai.</li>
+                    </ul>
+                    <div class="exercise-box">
+                        ✏️ <strong>Mẹo mất gốc:</strong> Nhìn trong câu có từ chỉ thời gian nào -> Khoanh ngay thì tương ứng!<br>
+                        <em>Ví dụ:</em> She ________ (visit) Ha Long Bay <strong>last week</strong>.<br>
+                        👉 Thấy <strong>last week</strong> (quá khứ) ➔ Khoanh động tài dạng Quá khứ đơn: <strong>visited</strong>.
+                        </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>2. Câu Bị Động (Passive Voice)</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p><strong>Bản chất:</strong> Dùng khi chủ ngữ <em>bị/được</em> tác động chứ không tự làm hành động (Ví dụ: Ngôi nhà <em>được xây</em>, Bài hát <em>được hát</em>).</p>
+                    <p><strong>Công thức kinh điển:</strong> <span style="color: red; font-weight: bold;">S + be + V3/V-ed</span> (be chia theo thì).</p>
+                    <ul>
+                        <li>Hiện tại đơn: S + am/is/are + V3/V-ed</li>
+                        <li>Quá khứ đơn: S + was/were + V3/V-ed</li>
+                        <li>Tương lai đơn: S + will be + V3/V-ed</li>
+                    </ul>
+                    <div class="exercise-box">
+                        ✏️ <strong>Mẹo nhận biết câu bị động trong đề thi:</strong><br>
+                        Nếu chủ ngữ đứng đầu câu là <strong>Vật/Sự vật</strong> (như: <em>The car, The house, This letter, English...</em>) ➔ 90% câu đó chọn dạng Bị động (Cứ tìm đáp án có <strong>be + V3/V-ed</strong> mà khoanh).
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CHƯƠNG 2 -->
+        <section class="grade-section">
+            <h2 class="grade-title">📌 II. CÂU SO SÁNH & CÂU ĐIỀU KIỆN (IF)</h2>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>1. Tuyệt chiêu làm câu So Sánh (Comparison)</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p>Trong đề thi THPT có 2 dạng so sánh chính:</p>
+                    <ul>
+                        <li><strong>So sánh hơn (Giữa 2 đối tượng):</strong> 
+                            <br>• Tính từ ngắn (1 âm tiết): adj + <strong>-er + than</strong> (ví dụ: taller than, faster than).
+                            <br>• Tính từ dài (2 âm tiết trở lên): <strong>more + adj + than</strong> (ví dụ: more beautiful than).
+                        </li>
+                        <li><strong>So sánh nhất (Từ 3 đối tượng trở lên):</strong>
+                            <br>• Tính từ ngắn: <strong>the + adj + -est</strong> (ví dụ: the tallest).
+                            <br>• Tính từ dài: <strong>the most + adj</strong> (ví dụ: the most beautiful).
+                        </li>
+                        <li><strong>So sánh kép (Càng... thì càng...):</strong> <span style="color: red;">The + so sánh hơn, the + so sánh hơn.</span> (Ví dụ: The more you learn, the smarter you get).</li>
+                    </ul>
+                    <div class="exercise-box">
+                        ✏️ <strong>Mẹo mất gốc:</strong> Nhìn sau chỗ trống có từ <strong>THAN</strong> ➔ Khoanh đáp án có đuôi <strong>-er</strong> hoặc có chữ <strong>MORE</strong>. Nhìn trước chỗ trống có chữ <strong>THE</strong> ➔ Tìm đáp án có đuôi <strong>-est</strong> hoặc chữ <strong>MOST</strong>!
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>2. Câu Điều Kiện (If) - Mẹo khớp vế ăn điểm</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p>Chỉ cần thuộc công thức khớp 2 vế (Vế IF và Vế CHÍNH):</p>
+                    <ul>
+                        <li><strong>Loại 1 (Có thể xảy ra):</strong> If + S + V(hiện tại đơn) , S + <strong>will + V_nguyên thể</strong>.</li>
+                        <li><strong>Loại 2 (Không có thật ở hiện tại):</strong> If + S + V2/V_ed (be = WERE) , S + <strong>would + V_nguyên thể</strong>.</li>
+                        <li><strong>Loại 3 (Không có thật ở quá khứ):</strong> If + S + had + V3/V_ed , S + <strong>would have + V3/V_ed</strong>.</li>
+                    </ul>
+                    <div class="exercise-box">
+                        ✏️ <strong>Cách làm bài cực dễ:</strong> Nhìn vào vế đã cho sẵn để suy ra vế còn lại!<br>
+                        <em>Ví dụ đề bài:</em> If I had money, I ________ a new car.<br>
+                        👉 Thấy vế IF chia "had" (Quá khứ - Loại 2) ➔ Vế sau bắt buộc tìm đáp án có chữ <strong>WOULD + V</strong> ➔ Khoanh <strong>would buy</strong>.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CHƯƠNG 3 -->
+        <section class="grade-section">
+            <h2 class="grade-title">📌 III. MỆNH ĐỀ QUAN HỆ & CÂU HỎI ĐUÔI (ĐIỂM CHẮC CÚ)</h2>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>1. Mệnh đề quan hệ (Who, Whom, Which, Whose, Where)</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p>Đề bài hay bắt điền từ nối, chỉ cần nhìn từ đứng ngay <strong>TRƯỚC chỗ trống</strong>:</p>
+                    <ul>
+                        <li>Trước là <strong>NGƯỜI</strong> + Chỗ trống + sau là Động từ (V) ➔ Chọn <strong style="color: blue;">WHO</strong>.</li>
+                        <li>Trước là <strong>NGƯỜI</strong> + Chỗ trống + sau là Chủ ngữ (S + V) ➔ Chọn <strong style="color: blue;">WHOM</strong>.</li>
+                        <li>Trước là <strong>VẬT / CON VẬT</strong> ➔ Chọn ngay <strong style="color: blue;">WHICH</strong>.</li>
+                        <li>Trước là <strong>ĐỊA ĐIỂM</strong> (school, city, house...) ➔ Chọn <strong style="color: blue;">WHERE</strong>.</li>
+                        <li>Nói về sự <strong>SỞ HỮU</strong> (của ai) ➔ Chọn <strong style="color: blue;">WHOSE</strong> (+ danh từ).</li>
+                    </ul>
+                    <div class="exercise-box">
+                        ✏️ <strong>Ví dụ phân tích:</strong> The man ________ saved the girl is a hero.<br>
+                        👉 Nhìn trước chỗ trống là "The man" (Người) + Sau chỗ trống là "saved" (Động từ quá khứ) ➔ Đáp án đúng là <strong>WHO</strong>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>2. Câu hỏi đuôi (Tag Question) - Quy tắc Âm Dương</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p><strong>Quy tắc vàng:</strong> Vế đầu KHẲNG ĐỊNH (+) thì đuôi PHỦ ĐỊNH (-) và ngược lại.</p>
+                    <ul>
+                        <li>Vế đầu dùng <strong>is / are / was / were</strong> ➔ Đuôi lặp lại: isn't / aren't / wasn't / weren't + Chủ ngữ.</li>
+                        <li>Vế đầu dùng <strong>will / can / should</strong> ➔ Đuôi dùng: won't / can't / shouldn't + Chủ ngữ.</li>
+                        <li>Vế đầu dùng động từ thường (V) ➔ Đuôi mượn trợ động từ: <strong>don't / doesn't / didn't</strong> + Chủ ngữ.</li>
+                    </ul>
+                    <div class="exercise-box">
+                        ✏️ <strong>Ví dụ phân tích:</strong> You are a student, ________?<br>
+                        👉 Vế đầu là Khẳng định (+) dùng "are" ➔ Đuôi phải Phủ định (-) là <strong>aren't you?</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CHƯƠNG 4 -->
+        <section class="grade-section">
+            <h2 class="grade-title">📌 IV. PHÁT ÂM, TRỌNG ÂM & KỸ NĂNG BÀI ĐỌC</h2>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>1. Mẹo khoanh Phát âm đuôi -ED và -S/ES (100% chính xác)</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p><strong>Đuôi -ED:</strong> Học thuộc câu thần chú:</p>
+                    <ul>
+                        <li>Phát âm là /id/: Âm cuối là <strong>t, d</strong> (Mẹo: <strong>T</strong>iền <strong>Đ</strong>ô).</li>
+                        <li>Phát âm là /t/: Âm cuối là <strong>p, k, f, s, sh, ch</strong> (Mẹo: <strong>P</strong>hải <strong>K</strong>hiến <strong>F</strong>ương <strong>S</strong>ợ <strong>SH</strong>iết <strong>CH</strong>ặt).</li>
+                        <li>Phát âm là /d/: Các trường hợp còn lại.</li>
+                    </ul>
+                    <p><strong>Đuôi -S/ES:</strong></p>
+                    <ul>
+                        <li>Phát âm là /s/: Âm cuối là <strong>p, k, f, t, th</strong> (Mẹo: <strong>P</strong>hải <strong>K</strong>hiến <strong>F</strong>ương <strong>T</strong>hôi <strong>TH</strong>ắc-mắc).</li>
+                        <li>Phát âm là /iz/: Âm cuối là <strong>s, ss, ch, sh, x, z, ge, ce</strong> (Mẹo: <strong>S</strong>áu <strong>CH</strong>ạy <strong>SH</strong>e <strong>X</strong>ịn <strong>Z</strong>ỏm).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>2. Chiến thuật chinh phục Bài Đọc Điền Từ & Đọc Hiểu</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p>Dành riêng cho các bạn ngại đọc đoạn văn dài:</p>
+                    <ol>
+                        <li><strong>Không đọc hết bài văn:</strong> Hãy đọc CÂU HỎI trước để biết người ta đang hỏi cái gì.</li>
+                        <li><strong>Tìm "Từ khóa" (Keywords):</strong> Nhìn các từ quan trọng (Tên riêng, Con số, Năm, Danh từ chính) trong câu hỏi.</li>
+                        <li><strong>Dùng mắt dò (Scan):</strong> Dò ngược lên đoạn văn xem từ khóa đó xuất hiện ở dòng nào ➔ Đọc kỹ 1-2 câu xung quanh dòng đó để chọn đáp án.</li>
+                        <li><strong>Câu hỏi ý chính (Main idea/Title):</strong> Làm CỦI CÙNG sau khi đã trả lời xong các câu chi tiết. Thường đáp án nằm ở câu đầu tiên hoặc câu cuối cùng của đoạn 1.</li>
+                    </ol>
+                </div>
+            </div>
+
+        </section>
+
+    </div> <!-- Đóng math-container -->
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            let btn = document.getElementById('theme-toggle');
+            if (document.body.classList.contains('dark-mode')) {
+                btn.textContent = '☀️ Chế độ sáng';
+            } else {
+                btn.textContent = '🌙 Chế độ tối';
+            }
+        }
+
+        function searchTopic() {
+            let input = document.getElementById('search-input').value.toLowerCase().trim();
+            let cards = document.getElementsByClassName('topic-card');
+
+            for (let i = 0; i < cards.length; i++) {
+                let text = cards[i].innerText.toLowerCase();
+                if (text.includes(input)) {
+                    cards[i].style.display = "block";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
