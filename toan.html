@@ -1,63 +1,111 @@
-</style>
-</head>
-<body>
-
-    <header>
-        <div class="header-top">
-            <h1>📘 ÔN THI MÔN TOÁN 2027</h1>
-            <button id="theme-toggle" class="btn-toggle" onclick="toggleTheme()">🌙 Chế độ tối</button>
-        </div>
-        <p>Hệ thống kiến thức: Lớp 10 - Lớp 11 - Lớp 12</p>
-    </header>
-
-    <div class="top-bar">
-        <a href="index.html" class="back-btn">⬅️ Quay lại Trang chủ</a>
-        <input type="text" id="search-input" placeholder="🔍 Tìm bài học..." onkeyup="searchTopic()">
-    </div>
-
-    <div class="math-container">
-
-        <!-- LỚP 10 -->
-        <section class="grade-section">
-            <h2 class="grade-title">📌 CHƯƠNG TRÌNH LỚP 10</h2>
-            
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>1. Hàm số bậc nhất & Bậc hai</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Hàm số bậc hai y = ax² + bx + c (a ≠ 0) có đồ thị Parabol đỉnh I(-b/2a; -Δ/4a).</p>
-                    <p><strong>Công thức:</strong> Trục đối xứng x = -b/2a.</p>
-                    <div class="exercise-box">✏️ <strong>Bài tập mẫu:</strong> Tìm đỉnh Parabol y = x² - 4x + 3.</div>
-                </div>
-            </div>
-
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>2. Phương trình, Bất phương trình & Hệ PTT</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Xét dấu tam thức bậc hai ax² + bx + c theo quy tắc "Trong trái ngoài cùng".</p>
-                    <p><strong>Công thức:</strong> Δ = b² - 4ac. Nghiệm x = (-b ± √Δ) / 2a.</p>
-                    <div class="exercise-box">✏️ <strong>Bài tập mẫu:</strong> Giải bất phương trình x² - 5x + 6 ≤ 0.</div>
-                </div>
-            </div>
-
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>3. Véc tơ & Hình học tọa độ</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Véc tơ a = (x₁; y₁), b = (x₂; y₂).</p>
-                    <p><strong>Công thức:</strong> Tích vô hướng a·b = x₁x₂ + y₁y₂. Độ dài AB = √[(x<sub>B</sub>-x<sub>A</sub>)² + (y<sub>B</sub>-y<sub>A</sub>)²].</p>
-                    <div class="exercise-box">✏️ <strong>Bài tập mẫu:</strong> Tính khoảng cách giữa A(1;2) và B(4;6).</div>
-                </div>
-                </div>
-        </section>
-                <!-- LỚP 11 -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ôn Thi Môn Toán THPT 2027</title>
+    <style>
+        :root {
+            --bg-color: #e0f7fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --primary-color: #00838f;
+        }
+        body.dark-mode {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --primary-color: #80deea;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        header {
+            background-color: #00838f;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .btn-toggle {
+            background: white;
+            color: #333;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 900px;
+            margin: 20px auto 10px;
+        }
+        .back-btn {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        #search-input {
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            width: 250px;
+            outline: none;
+        }
+        .math-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .grade-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .topic-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin: 15px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .topic-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .topic-header h3 {
+            margin: 0;
+            color: #00838f;
+        }
+        .check-done {
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .exercise-box {
+            background-color: rgba(0, 131, 143, 0.08);
+            border-left: 4px solid var(--primary-color);
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+    </style>
+    <!-- LỚP 11 -->
         <section class="grade-section">
             <h2 class="grade-title">📌 CHƯƠNG TRÌNH LỚP 11</h2>
 
@@ -96,30 +144,82 @@
                 </div>
             </div>
         </section>
-<script>
-        function toggleTheme() {
-            document.body.classList.toggle('dark-mode');
-            let btn = document.getElementById('theme-toggle');
-            if (document.body.classList.contains('dark-mode')) {
-                btn.textContent = '☀️ Chế độ sáng';
-            } else {
-                btn.textContent = '🌙 Chế độ tối';
-            }
-        }
+        <!-- LỚP 11 -->
+        <section class="grade-section">
+            <h2 class="grade-title">📌 CHƯƠNG TRÌNH LỚP 11</h2>
 
-        function searchTopic() {
-            let input = document.getElementById('search-input').value.toLowerCase();
-            let cards = document.getElementsByClassName('topic-card');
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>1. Hàm số & Phương trình lượng giác</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p><strong>Khái niệm:</strong> Các hàm y = sin(x), cos(x), tan(x), cot(x).</p>
+                    <p><strong>Công thức:</strong> sin²(x) + cos²(x) = 1; sin(x) = sin(α) ⇔ x = α + k2π hoặc x = π - α + k2π.</p>
+                    <div class="exercise-box">✏️ <strong>Bài tập mẫu:</strong> Giải phương trình sin(x) = 1/2.</div>
+                </div>
+            </div>
 
-            for (let i = 0; i < cards.length; i++) {
-                let text = cards[i].innerText.toLowerCase();
-                if (text.includes(input)) {
-                    cards[i].style.display = "block";
-                } else {
-                    cards[i].style.display = "none";
-                }
-            }
-        }
-    </script>
-</body>
-</html>
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>2. Dãy số, Cấp số cộng & Cấp số nhân</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p><strong>Khái niệm:</strong> CSC cộng công sai d. CSN nhân công bội q.</p>
+                    <p><strong>Công thức:</strong> CSC: u<sub>n</sub> = u₁ + (n-1)d. CSN: u<sub>n</sub> = u₁·q<sup>n-1</sup>.</p>
+                    <div class="exercise-box">✏️ <strong>Bài tập mẫu:</strong> Cho u₁ = 3, d = 2. Tìm u₁₀ của CSC.</div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>3. Xác suất & Thống kê</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p><strong>Khái niệm:</strong> Xác suất biến cố P(A) = n(A) / n(Ω).</p>
+                    <div class="exercise-box">✏️ <strong>Bài tập mẫu:</strong> Gieo xúc xắc 6 mặt, tính xác suất ra mặt chẵn.</div>
+                </div>
+            </div>
+        </section>
+        <!-- LỚP 10 -->
+        <section class="grade-section">
+            <h2 class="grade-title">📌 CHƯƠNG TRÌNH LỚP 10</h2>
+            
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>1. Hàm số bậc nhất & Bậc hai</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p><strong>Khái niệm:</strong> Hàm số bậc hai y = ax² + bx + c (a ≠ 0) có đồ thị Parabol đỉnh I(-b/2a; -Δ/4a).</p>
+                    <p><strong>Công thức:</strong> Trục đối xứng x = -b/2a.</p>
+                    <div class="exercise-box">✏️ <strong>Bài tập mẫu:</strong> Tìm đỉnh Parabol y = x² - 4x + 3.</div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>2. Phương trình, Bất phương trình & Hệ PTT</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p><strong>Khái niệm:</strong> Xét dấu tam thức bậc hai ax² + bx + c theo quy tắc "Trong trái ngoài cùng".</p>
+                    <p><strong>Công thức:</strong> Δ = b² - 4ac. Nghiệm x = (-b ± √Δ) / 2a.</p>
+                    <div class="exercise-box">✏️ <strong>Bài tập mẫu:</strong> Giải bất phương trình x² - 5x + 6 ≤ 0.</div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>3. Véc tơ & Hình học tọa độ</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <p><strong>Khái niệm:</strong> Véc tơ a = (x₁; y₁), b = (x₂; y₂).</p>
+                    <p><strong>Công thức:</strong> Tích vô hướng a·b = x₁x₂ + y₁y₂. Độ dài AB = √[(x<sub>B</sub>-x<sub>A</sub>)² + (y<sub>B</sub>-y<sub>A</sub>)²].</p>
+                    <div class="exercise-box">✏️ <strong>Bài tập mẫu:</strong> Tính khoảng cách giữa A(1;2) và B(4;6).</div>
+                </div>
+            </div>
+        </section>
