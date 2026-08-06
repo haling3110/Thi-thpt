@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ôn Thi Môn Địa Lí THPT 2027</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <h1>🌍 ÔN THI MÔN ĐỊA LÍ 2027</h1>
+            <button id="theme-toggle" class="btn-toggle" onclick="toggleTheme()">🌙 Chế độ tối</button>
+        </div>
+        <p>Hệ thống toàn bộ Địa lí Lớp 10, Lớp 11, Lớp 12 & Tuyệt chiêu Atlat</p>
+    </header>
+
+    <div class="top-bar">
+        <a href="index.html" class="back-btn">⬅️ Quay lại Trang chủ</a>
+        <input type="text" id="search-input" placeholder="🔍 Tìm chuyên đề, vùng kinh tế, quốc gia..." onkeyup="searchTopic()">
+    </div>
+
+    <div class="math-container">
+
+        <!-- LỚP 10 -->
+        <section class="grade-section">
+            <h2 class="grade-title">📌 I. ĐỊA LÍ LỚP 10 - CƠ SỞ TỰ NHIÊN & DÂN CƯ THẾ GIỚI</h2>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>1. Bản đồ & Phương pháp sử dụng</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <ul>
+                        <li><strong>Phương pháp chiếu đồ:</strong> Chuyển bề mặt Trái Đất lên mặt phẳng (hình chiếu phương vị, hình trụ, hình nón).</li>
+                        <li><strong>Các phương pháp biểu hiện:</strong> Ký hiệu (đối tượng phân bố theo điểm), Đường đẳng áp/đẳng nhiệt (đối tượng liên tục), Phân tán địa lý (mật độ dân số).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>2. Tự nhiên Trái Đất & Khí hậu</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <ul>
+                        <li><strong>Chuyển động Trái Đất:</strong> Tự quay quanh trục (sinh ra ngày đêm, lực Coriolis) & Quay quanh Mặt Trời (sinh ra các mùa, ngày đêm dài ngắn theo mùa).</li>
+                        <li><strong>Khí quyển & Khí hậu:</strong> Khí áp và gió (Gió Tín phong, Gió Tây ôn đới, Gió mùa); Mưa phân bố không đều (nhiều ở Xích đạo, ít ở vùng cực và chí tuyến).</li>
+                    </ul>
+                    <div class="exercise-box">
+                        🎯 <strong>BẪY THI THPT:</strong> Lực Coriolis làm lệch hướng chuyển động ở Bán cầu Bắc sang **phải**, Bán cầu Nam sang **trái** theo hướng chuyển động.
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>3. Dân cư thế giới</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <ul>
+                        <li><strong>Gia tăng dân số:</strong> Gia tăng tự nhiên (Sinh - Tử) và Gia tăng cơ học (Xuất cư - Nhập cư).</li>
+                        <li><strong>Cơ cấu dân số:</strong> Cơ cấu sinh học (tuổi, giới tính) và Cơ cấu xã hội (trình độ học vấn, lao động).</li>
+                        <li><strong>Đô thị hóa:</strong> Xu hướng tăng nhanh số dân đô thị, mở rộng quy mô đô thị và lối sống đô thị.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- LỚP 11 -->
+        <section class="grade-section">
+            <h2 class="grade-title">📌 II. ĐỊA LÍ LỚP 11 - CÁC KHU VỰC & QUỐC GIA LỚN</h2>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>1. Hoa Kỳ (Mỹ)</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <ul>
+                        <li><strong>Tự nhiên:</strong> Lãnh thổ rộng lớn, giàu tài nguyên (miền Tây đồi núi khoáng sản, miền Trung đồng bằng phù sa, miền Đông than đá/sắt).</li>
+                        <li><strong>Kinh tế:</strong> Nền kinh tế hàng đầu thế giới. Công nghiệp dịch chuyển từ vùng Đông Bắc sang vùng "Vành đai Mặt Trời" (Phía Nam và Tây).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>2. Liên minh Châu Âu (EU)</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <ul>
+                        <li><strong>Mô hình liên kết:</strong> Tự do di chuyển con người, hàng hóa, dịch vụ và tiền tệ (đồng Euro).</li>
+                        <li><strong>Thành tựu:</strong> Trung tâm kinh tế, thương mại lớn thế giới, đi đầu về khoa học công nghệ xanh.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>3. Đông Á & Đông Nam Á (ASEAN)</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <ul>
+                        <li><strong>Đông Á:</strong> Trung Quốc, Nhật Bản, Hàn Quốc có nền kinh tế phát triển năng động, quy mô sản xuất công nghiệp cực lớn.</li>
+                        <li><strong>Đông Nam Á (ASEAN):</strong> Giàu tài nguyên, lực lượng lao động đông/rẻ; Đang đẩy mạnh liên kết khu vực qua AFTA và Cộng đồng Kinh tế ASEAN (AEC).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- LỚP 12 -->
+        <section class="grade-section">
+            <h2 class="grade-title">📌 III. ĐỊA LÍ LỚP 12 - TRỌNG TÂM ĐỊA LÍ VIỆT NAM & ATLAT</h2>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>1. Địa lí Tự nhiên Việt Nam</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <ul>
+                        <li><strong>Vị trí địa lý:</strong> Nội chí tuyến Bán cầu Bắc, trong vùng gió mùa châu Á ➔ Quy định tính chất nhiệt đới ẩm gió mùa.</li>
+                        <li><strong>Địa hình:</strong> 3/4 đồi núi nhưng chủ yếu núi thấp (< 1000m chiếm 85%), hướng núi chính là Tây Bắc - Đông Nam và Hướng vòng cung.</li>
+                        <li><strong>Khí hậu:</strong> Nhiệt đới ẩm gió mùa. Gió mùa Đông Bắc (mùa đông lạnh khô/ẩm), Gió mùa Tây Nam (mùa hè mưa nhiều, gây hiệu ứng Phơn khô nóng ở Bắc Trung Bộ).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>2. Dân cư & Ngành Kinh tế Việt Nam</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <ul>
+                        <li><strong>Dân cư:</strong> Đông dân, đa dân tộc, cơ cấu dân số đang già hóa, phân bố không đều (tập trung đông ở đồng bằng/đô thị).</li>
+                        <li><strong>Nông nghiệp:</strong> Chuyển từ tự túc sang sản xuất hàng hóa quy mô lớn, đẩy mạnh cây công nghiệp lâu năm.</li>
+                        <li><strong>Công nghiệp:</strong> Chuyển dịch cơ cấu theo hướng tăng tỷ trọng công nghiệp chế biến, giảm công nghiệp khai khoáng.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header">
+                    <h3>3. Các Vùng Kinh Tế Trọng Điểm & Bẫy Thi Atlat</h3>
+                    <label class="check-done"><input type="checkbox"> Đã học</label>
+                </div>
+                <div class="topic-content">
+                    <ul>
+                        <li><strong>TD&MN Bắc Bộ:</strong> Khai thác khoáng sản, thủy điện lớn (Sông Đà), cây trồng gốc cận nhiệt/ôn đới (Chè).</li>
+                        <li><strong>Đồng bằng Sông Hồng:</strong> Mật độ dân số cao nhất, thâm canh lúa nước, công nghiệp hiện đại.</li>
+                        <li><strong>Tây Nguyên:</strong> Đất đỏ badan, chuyên canh **cây công nghiệp lâu năm lớn nhất** (Cà phê, cao su, tiêu).</li>
+                        <li><strong>Đồng bằng Sông Cửu Long:</strong> Vùng vựa lúa, thủy sản lớn nhất nước. Hạn chế lớn nhất: Xâm nhập mặn mùa khô.</li>
+                    </ul>
+                    <div class="exercise-box">
+                        🎯 <strong>BÍ KÍP ĐỌC ATLAT:</strong> Đề hỏi <em>"Tỉnh nào sau đây..."</em> hoặc <em>"Trung tâm công nghiệp nào có quy mô..."</em> ➔ Mở ngay **Trang 3 (Ký hiệu chung)** đối chiếu hình tròn/màu sắc trước khi dóng vào trang vùng!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div> <!-- Đóng math-container -->
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            let btn = document.getElementById('theme-toggle');
+            if (document.body.classList.contains('dark-mode')) {
+                btn.textContent = '☀️ Chế độ sáng';
+            } else {
+                btn.textContent = '🌙 Chế độ tối';
+            }
+        }
+
+        function searchTopic() {
+            let input = document.getElementById('search-input').value.toLowerCase().trim();
+            let cards = document.getElementsByClassName('topic-card');
+
+            for (let i = 0; i < cards.length; i++) {
+                let text = cards[i].innerText.toLowerCase();
+                if (text.includes(input)) {
+                    cards[i].style.display = "block";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
