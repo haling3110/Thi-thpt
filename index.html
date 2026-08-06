@@ -3,60 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THPT2027 MASTER</title>
+    <title>Trang Chủ - Ôn Thi THPT Quốc Gia 2027</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .subject-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+        .subject-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .subject-icon {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+        .subject-card h3 {
+            margin: 10px 0 5px;
+            color: var(--primary-color);
+            font-size: 20px;
+        }
+        .subject-card p {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-bottom: 15px;
+        }
+        .btn-study {
+            background-color: #00838f;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <div class="header-top">
-            <h1>🌿 THPT2027 MASTER</h1>
-            <button id="theme-toggle" class="btn-toggle">🌙 Chế độ tối</button>
+            <h1>🎓 ÔN THI THPT QUỐC GIA 2027</h1>
+            <button id="theme-toggle" class="btn-toggle" onclick="toggleTheme()">🌙 Chế độ tối</button>
         </div>
-        <p>Website học tập của Linh</p>
+        <p>Hệ thống tổng hợp kiến thức trọng tâm các môn học</p>
     </header>
 
-    <!-- BỘ ĐẾM THỜI GIAN POMODORO -->
-    <section class="pomodoro-card">
-        <h3>⏱️ Góc Tập Trung (Pomodoro)</h3>
-        <div id="timer">20:00</div>
-        <div class="pomo-buttons">
-            <button onclick="startTimer()">Bắt đầu học (20p)</button>
-            <button onclick="pauseTimer()">Tạm dừng</button>
-            <button onclick="resetTimer()">Đặt lại</button>
+    <div class="math-container">
+        <h2 class="grade-title" style="text-align: center; margin-top: 25px;">📚 DẪN ĐƯỜNG CÁC MÔN HỌC</h2>
+
+        <div class="subject-grid">
+            <!-- Môn Toán -->
+            <a href="toan.html" class="subject-card">
+                <div>
+                    <div class="subject-icon">📐</div>
+                    <h3>Môn Toán</h3>
+                    <p>Trọng tâm Đại số, Tích phân, Mũ Logarit & Hình Oxyz (Lớp 10 - 12)</p>
+                </div>
+                <span class="btn-study">Vào học ngay ➔</span>
+            </a>
+            <!-- Môn Văn -->
+            <a href="#" class="subject-card" onclick="alert('Môn Văn đang được cập nhật!')">
+                <div>
+                    <div class="subject-icon">📖</div>
+                    <h3>Môn Ngữ Văn</h3>
+                    <p>Tổng hợp sơ đồ tư duy tác phẩm, Nghị luận xã hội & Đọc hiểu</p>
+                </div>
+                <span class="btn-study" style="background-color: #78909c;">Đang cập nhật</span>
+            </a>
+
+            <!-- Môn Tiếng Anh -->
+            <a href="#" class="subject-card" onclick="alert('Môn Tiếng Anh đang được cập nhật!')">
+                <div>
+                    <div class="subject-icon">🌐</div>
+                    <h3>Môn Tiếng Anh</h3>
+                    <p>Ngữ pháp trọng tâm, Từ vựng theo chủ đề & Bài tập đọc hiểu</p>
+                </div>
+                <span class="btn-study" style="background-color: #78909c;">Đang cập nhật</span>
+            </a>
+
+            <!-- Môn Lý / Hóa / Sinh / Sử / Địa -->
+            <a href="#" class="subject-card" onclick="alert('Các môn khác đang hoàn thiện!')">
+                <div>
+                    <div class="subject-icon">🔬</div>
+                    <h3>Môn Học Khác</h3>
+                    <p>Lý, Hóa, Sinh, Lịch sử, Địa lý, GDCD chuẩn cấu trúc mới</p>
+                </div>
+                <span class="btn-study" style="background-color: #78909c;">Sắp ra mắt</span>
+            </a>
         </div>
-        <p id="pomo-status">Sẵn sàng để bứt phá kiến thức!</p>
-    </section>
+    </div>
 
-    <main>
-        <a href="toan.html" class="card-link">
-            <div class="card">
-                <h2>📘 Toán</h2>
-                <p>Ôn luyện THPT 2027</p>
-            </div>
-        </a>
-
-        <a href="van.html" class="card-link">
-            <div class="card">
-                <h2>📖 Văn</h2>
-                <p>Nghị luận - Đọc hiểu</p>
-            </div>
-        </a>
-
-        <a href="su.html" class="card-link">
-            <div class="card">
-                <h2>🏛️ Lịch sử</h2>
-                <p>Tóm tắt - Timeline</p>
-            </div>
-        </a>
-
-        <a href="dia.html" class="card-link">
-            <div class="card">
-                <h2>🌍 Địa lí</h2>
-                <p>Atlat - Kỹ năng</p>
-            </div>
-        </a>
-    </main>
-
-  <script src="script.js"></script>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            let btn = document.getElementById('theme-toggle');
+            if (document.body.classList.contains('dark-mode')) {
+                btn.textContent = '☀️ Chế độ sáng';
+            } else {
+                btn.textContent = '🌙 Chế độ tối';
+            }
+        }
+    </script>
 </body>
 </html>
