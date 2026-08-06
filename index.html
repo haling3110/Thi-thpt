@@ -15,7 +15,7 @@
         .subject-card {
             background-color: var(--card-bg);
             border-radius: 12px;
-            padding: 25px 20px;
+            padding: 22px 18px;
             text-align: center;
             box-shadow: 0 4px 12px rgba(0,0,0,0.08);
             transition: transform 0.2s, box-shadow 0.2s;
@@ -31,18 +31,19 @@
             box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
         .subject-icon {
-            font-size: 45px;
-            margin-bottom: 10px;
+            font-size: 42px;
+            margin-bottom: 8px;
         }
         .subject-card h3 {
-            margin: 10px 0 5px;
+            margin: 8px 0 5px;
             color: var(--primary-color);
             font-size: 20px;
         }
         .subject-card p {
-            font-size: 14px;
+            font-size: 13.5px;
             opacity: 0.8;
             margin-bottom: 15px;
+            line-height: 1.4;
         }
         .btn-study {
             background-color: #00838f;
@@ -50,7 +51,7 @@
             padding: 8px 18px;
             border-radius: 20px;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 13.5px;
         }
     </style>
 </head>
@@ -61,50 +62,60 @@
             <h1>🎓 ÔN THI THPT QUỐC GIA 2027</h1>
             <button id="theme-toggle" class="btn-toggle" onclick="toggleTheme()">🌙 Chế độ tối</button>
         </div>
-        <p>Hệ thống tổng hợp kiến thức trọng tâm các môn học</p>
+        <p>Hệ thống tổng hợp kiến thức trọng tâm 5 môn thi chính</p>
     </header>
 
     <div class="math-container">
         <h2 class="grade-title" style="text-align: center; margin-top: 25px;">📚 DẪN ĐƯỜNG CÁC MÔN HỌC</h2>
 
         <div class="subject-grid">
-            <!-- Môn Toán -->
+            <!-- 1. Môn Toán -->
             <a href="toan.html" class="subject-card">
                 <div>
                     <div class="subject-icon">📐</div>
                     <h3>Môn Toán</h3>
-                    <p>Trọng tâm Đại số, Tích phân, Mũ Logarit & Hình Oxyz (Lớp 10 - 12)</p>
+                    <p>Đại số, Hình học, Tích phân, Mũ - Logarit & Oxyz (Lớp 10 - 12)</p>
                 </div>
                 <span class="btn-study">Vào học ngay ➔</span>
             </a>
-            <!-- Môn Văn -->
-            <a href="#" class="subject-card" onclick="alert('Môn Văn đang được cập nhật!')">
+
+            <!-- 2. Môn Ngữ Văn -->
+            <a href="van.html" class="subject-card">
                 <div>
                     <div class="subject-icon">📖</div>
                     <h3>Môn Ngữ Văn</h3>
-                    <p>Tổng hợp sơ đồ tư duy tác phẩm, Nghị luận xã hội & Đọc hiểu</p>
-                </div>
-                <span class="btn-study" style="background-color: #78909c;">Đang cập nhật</span>
+                    <p>Sơ đồ tư duy các tác phẩm, Nghị luận xã hội & Đọc hiểu văn bản</p>
+                    </div>
+                <span class="btn-study">Vào học ngay ➔</span>
             </a>
-
-            <!-- Môn Tiếng Anh -->
-            <a href="#" class="subject-card" onclick="alert('Môn Tiếng Anh đang được cập nhật!')">
+            <!-- 3. Môn Tiếng Anh -->
+            <a href="anh.html" class="subject-card">
                 <div>
                     <div class="subject-icon">🌐</div>
                     <h3>Môn Tiếng Anh</h3>
-                    <p>Ngữ pháp trọng tâm, Từ vựng theo chủ đề & Bài tập đọc hiểu</p>
+                    <p>Tổng hợp 25 chuyên đề Ngữ pháp, Từ vựng & Kỹ năng làm bài đọc</p>
                 </div>
-                <span class="btn-study" style="background-color: #78909c;">Đang cập nhật</span>
+                <span class="btn-study">Vào học ngay ➔</span>
             </a>
 
-            <!-- Môn Lý / Hóa / Sinh / Sử / Địa -->
-            <a href="#" class="subject-card" onclick="alert('Các môn khác đang hoàn thiện!')">
+            <!-- 4. Môn Lịch Sử -->
+            <a href="su.html" class="subject-card">
                 <div>
-                    <div class="subject-icon">🔬</div>
-                    <h3>Môn Học Khác</h3>
-                    <p>Lý, Hóa, Sinh, Lịch sử, Địa lý, GDCD chuẩn cấu trúc mới</p>
+                    <div class="subject-icon">📜</div>
+                    <h3>Môn Lịch Sử</h3>
+                    <p>Mốc lịch sử Việt Nam & Thế giới, Sơ đồ tiến trình theo giai đoạn</p>
                 </div>
-                <span class="btn-study" style="background-color: #78909c;">Sắp ra mắt</span>
+                <span class="btn-study">Vào học ngay ➔</span>
+            </a>
+
+            <!-- 5. Môn Địa Lý -->
+            <a href="dia.html" class="subject-card">
+                <div>
+                    <div class="subject-icon">🗺️</div>
+                    <h3>Môn Địa Lý</h3>
+                    <p>Địa lý Tự nhiên, Đân cư, Các ngành & Vùng kinh tế trọng điểm</p>
+                </div>
+                <span class="btn-study">Vào học ngay ➔</span>
             </a>
         </div>
     </div>
