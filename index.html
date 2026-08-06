@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THPT2027 MASTER</title>
-<link rel="stylesheet" href="style.css?v=1">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
     <header>
-        <h1>🌿 THPT2027 MASTER</h1>
+        <div class="header-top">
+            <h1>🌿 THPT2027 MASTER</h1>
+            <button id="theme-toggle" class="btn-toggle">🌙 Chế độ tối</button>
+        </div>
         <p>Website học tập của Linh</p>
     </header>
+
+    <!-- BỘ ĐẾM THỜI GIAN POMODORO -->
+    <section class="pomodoro-card">
+        <h3>⏱️ Góc Tập Trung (Pomodoro)</h3>
+        <div id="timer">20:00</div>
+        <div class="pomo-buttons">
+            <button onclick="startTimer()">Bắt đầu học (20p)</button>
+            <button onclick="pauseTimer()">Tạm dừng</button>
+            <button onclick="resetTimer()">Đặt lại</button>
+        </div>
+        <p id="pomo-status">Sẵn sàng để bứt phá kiến thức!</p>
+    </section>
 
     <main>
         <a href="toan.html" class="card-link">
@@ -45,8 +57,18 @@
         </a>
     </main>
 
-<script src="script.js"></script>
+    <section class="goal-section">
+        <h2>🎯 Mục tiêu của chúng ta</h2>
+        <p>Mình muốn đến giữa năm 2027, bạn có:</p>
+        <ul>
+            <li>📚 <strong>4 cuốn tài liệu hoàn chỉnh</strong> (Toán, Văn, Sử, Địa) để in.</li>
+            <li>🌐 <strong>Một ứng dụng học tập tra cứu</strong>.</li>
+            <li>📝 <strong>Bộ đề, Flashcard & Quiz</strong>.</li>
+            <li>📅 <strong>Kế hoạch & Đếm ngược tiến độ</strong>.</li>
+        </ul>
+        <p class="github-note">✨ Tất cả đều do chính bạn sở hữu trên GitHub.</p>
+    </section>
 
+    <script src="script.js"></script>
 </body>
-
 </html>
