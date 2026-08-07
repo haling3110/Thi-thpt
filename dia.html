@@ -3,193 +3,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ôn Thi Môn Địa Lí THPT 2027</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ôn Thi Tốt Nghiệp THPT - Môn Địa Lý 12</title>
+    <!-- Thư viện MathJax hỗ trợ công thức Toán/Tính toán -->
+    <script>
+      MathJax = {
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --tiffany-blue: #00B2A9;       /* Màu Xanh Tiffany chủ đạo */
+            --tiffany-light: #E6F7F6;      /* Xanh Tiffany nhạt làm nền box */
+            --tiffany-dark: #005F5A;       /* Xanh Tiffany đậm cho chữ tiêu đề */
+            --text-main: #2C3E50;          /* Màu chữ chính */
+            --bg-color: #F4F9F9;           /* Nền trang nhẹ nhàng */
+            --card-bg: #FFFFFF;            /* Nền thẻ trắng */
+            --red-exercise: #E74C3C;       /* Màu ĐỎ nổi bật cho Đề bài tập */
+            --purple-highlight: #6C5CE7;   /* Màu Tím cho nhấn mạnh */
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, var(--tiffany-blue), var(--tiffany-dark));
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 20px rgba(0, 178, 169, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .topic-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-top: 5px solid var(--tiffany-blue);
+        }
+
+        .topic-header {
+            color: var(--tiffany-dark);
+            font-size: 1.6rem;
+            border-bottom: 2px solid var(--tiffany-blue);
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .qa-block {
+            margin-bottom: 25px;
+            background-color: #FAFAFA;
+            border: 1px solid #E2E8F0;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .question-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--red-exercise);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .question-title::before {
+            content: "❓";
+            margin-right: 10px;
+        }
+
+        .answer-box {
+            background-color: var(--tiffany-light);
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 5px solid var(--tiffany-blue);
+        }
+
+        .answer-title {
+            font-weight: 700;
+            color: var(--tiffany-dark);
+            margin-bottom: 8px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 5px 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        b {
+            color: var(--purple-highlight);
+        }
+
+        /* Từ khóa nền vàng chữ đỏ nổi bật */
+        .keyword {
+            background-color: #FFEAA7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #D63031;
+        }
+    </style>
 </head>
 <body>
 
+<div class="container">
     <header>
-        <div class="header-top">
-            <h1>🌍 ÔN THI MÔN ĐỊA LÍ 2027</h1>
-            <button id="theme-toggle" class="btn-toggle" onclick="toggleTheme()">🌙 Chế độ tối</button>
-        </div>
-        <p>Hệ thống toàn bộ Địa lí Lớp 10, Lớp 11, Lớp 12 & Tuyệt chiêu Atlat</p>
+        <h1>ĐỊA LÝ LỚP 12 - TỔNG HỢP KIẾN THỨC & BÀI TẬP TRỌNG TÂM</h1>
+        <p>Bí Kíp Nhận Diện Biểu Đồ, Công Thức Tính Nhanh & Từ Khóa Vàng Ăn Điểm THPT</p>
     </header>
 
-    <div class="top-bar">
-        <a href="index.html" class="back-btn">⬅️ Quay lại Trang chủ</a>
-        <input type="text" id="search-input" placeholder="🔍 Tìm chuyên đề, vùng kinh tế, quốc gia..." onkeyup="searchTopic()">
+    <!-- CHỦ ĐỀ 1: KỸ NĂNG ĐỊA LÝ (NHẬN DIỆN BIỂU ĐỒ & CÔNG THỨC) -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 1: MẸO BÀI TẬP KỸ NĂNG ĐỊA LÝ (CỰC KỲ DỄ MẤT ĐIỂM)</h2>
+
+        <div class="qa-block">
+            <div class="question-title">Mẹo 1: Các từ khóa quyết định loại Biểu đồ cần vẽ/chọn là gì?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Bảng từ khóa nhận diện nhanh:</div>
+                <ul>
+                    <li>Tốc độ phát triển / Tốc độ tăng trưởng $\implies$ Chọn <span class="keyword">Biểu đồ Đường</span>.</li>
+                    <li>Cơ cấu / Tỉ trọng ($\le 3$ năm hoặc 3 mốc thời gian) $\implies$ Chọn <span class="keyword">Biểu đồ Tròn</span>.</li>
+                    <li>Cơ cấu / Sự chuyển dịch cơ cấu ($\ge 4$ năm) $\implies$ Chọn <span class="keyword">Biểu đồ Miền</span>.</li>
+                    <li>Sản lượng / Diện tích / Giá trị / So sánh các đối tượng $\implies$ Chọn <span class="keyword">Biểu đồ Cột</span>.</li>
+                    <li>Hai đơn vị khác nhau (ví dụ: Diện tích - $ha$ và Sản lượng - $tấn$) $\implies$ Chọn <span class="keyword">Biểu đồ Kết hợp (Cột và Đường)</span>.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-title">Mẹo 2: Các công thức tính toán Địa lý thường gặp nhất trong đề thi?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Bảng công thức áp dụng nhanh:</div>
+                <ul>
+                    <li><b>Mật độ dân số:</b> $\text{Mật độ (người/km}^2\text{)} = \frac{\text{Số dân (người)}}{\text{Diện tích (km}^2\text{)}}$.</li>
+                    <li><b>Tỉ trọng (%):</b> $\text{Tỉ trọng thành phần} = \frac{\text{Giá trị thành phần}}{\text{Tổng giá trị}} \times 100\%$.</li>
+                    <li><b>Cán cân thương mại:</b> $\text{Cán cân} = \text{Xuất khẩu} - \text{Nhập khẩu}$ (Âm = Nhập siêu, Dương = Xuất siêu).</li>
+                    <li><b>Năng suất cây trồng:</b> $\text{Năng suất (tạ/ha)} = \frac{\text{Sản lượng (tạ)}}{\text{Diện tích (ha)}}$.</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <div class="math-container">
+    <!-- CHỦ ĐỀ 2: ĐỊA LÝ TỰ NHIÊN & DÂN CƯ VIỆT NAM -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 2: ĐỊA LÝ TỰ NHIÊN VÀ DÂN CƯ VIỆT NAM</h2>
 
-        <!-- LỚP 10 -->
-        <section class="grade-section">
-            <h2 class="grade-title">📌 I. ĐỊA LÍ LỚP 10 - CƠ SỞ TỰ NHIÊN & DÂN CƯ THẾ GIỚI</h2>
-
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>1. Bản đồ & Phương pháp sử dụng</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <ul>
-                        <li><strong>Phương pháp chiếu đồ:</strong> Chuyển bề mặt Trái Đất lên mặt phẳng (hình chiếu phương vị, hình trụ, hình nón).</li>
-                        <li><strong>Các phương pháp biểu hiện:</strong> Ký hiệu (đối tượng phân bố theo điểm), Đường đẳng áp/đẳng nhiệt (đối tượng liên tục), Phân tán địa lý (mật độ dân số).</li>
-                    </ul>
-                </div>
+        <div class="qa-block">
+            <div class="question-title">Câu 1: Vị trí địa lý quy định tính chất cơ bản nào của thiên nhiên Việt Nam?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Lời giải & Từ khóa trọng tâm:</div>
+                <ul>
+                    <li>Nằm hoàn toàn trong vùng nội chí tuyến Bắc bán cầu $\implies$ Quy định tính chất <span class="keyword">Nhiệt đới ẩm gió mùa</span>.</li>
+                    <li>Nằm ở trung tâm khu vực Đông Nam Á, tiếp giáp Biển Đông $\implies$ Làm cho thiên nhiên <span class="keyword">xanh tốt, giàu sức sống</span> khác hẳn các nước cùng vĩ độ ở Tây Á/Bắc Phi.</li>
+                    <li>Nằm trên đường di lưu, di cư của sinh vật $\implies$ Tạo nên sự <span class="keyword">đa dạng về sinh học</span>.</li>
+                </ul>
             </div>
+        </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>2. Tự nhiên Trái Đất & Khí hậu</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <ul>
-                        <li><strong>Chuyển động Trái Đất:</strong> Tự quay quanh trục (sinh ra ngày đêm, lực Coriolis) & Quay quanh Mặt Trời (sinh ra các mùa, ngày đêm dài ngắn theo mùa).</li>
-                        <li><strong>Khí quyển & Khí hậu:</strong> Khí áp và gió (Gió Tín phong, Gió Tây ôn đới, Gió mùa); Mưa phân bố không đều (nhiều ở Xích đạo, ít ở vùng cực và chí tuyến).</li>
-                    </ul>
-                    <div class="exercise-box">
-                        🎯 <strong>BẪY THI THPT:</strong> Lực Coriolis làm lệch hướng chuyển động ở Bán cầu Bắc sang **phải**, Bán cầu Nam sang **trái** theo hướng chuyển động.
-                    </div>
-                </div>
+        <div class="qa-block">
+            <div class="question-title">Câu 2: Nguyên nhân chính tạo nên sự phân hóa mưa theo mùa ở nước ta (Đặc biệt là gió mùa)?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Lời giải & Từ khóa trọng tâm:</div>
+                <ul>
+                    <li>Gió mùa Đông Bắc (Mùa đông): Hoạt động từ tháng 11 đến tháng 4 năm sau $\implies$ Nửa đầu mùa đông <span class="keyword">lạnh khô</span>, nửa sau mùa đông <span class="keyword">lạnh ẩm, có mưa phun</span> (do đi qua biển).</li>
+                    <li>Gió Tây Nam (Mùa hạ): Hoạt động từ tháng 5 đến tháng 10 $\implies$ Gây mưa lớn cho <span class="keyword">Tây Nguyên và Nam Bộ</span>; vượt dãy Trường Sơn gây ra hiện tượng <span class="keyword">Gió phơn Tây Nam (Gió Lào khô nóng)</span> cho dải đồng bằng ven biển Trung Bộ.</li>
+                </ul>
             </div>
+        </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>3. Dân cư thế giới</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <ul>
-                        <li><strong>Gia tăng dân số:</strong> Gia tăng tự nhiên (Sinh - Tử) và Gia tăng cơ học (Xuất cư - Nhập cư).</li>
-                        <li><strong>Cơ cấu dân số:</strong> Cơ cấu sinh học (tuổi, giới tính) và Cơ cấu xã hội (trình độ học vấn, lao động).</li>
-                        <li><strong>Đô thị hóa:</strong> Xu hướng tăng nhanh số dân đô thị, mở rộng quy mô đô thị và lối sống đô thị.</li>
-                    </ul>
-                </div>
+        <div class="qa-block">
+            <div class="question-title">Câu 3: Đô thị hóa ở Việt Nam có đặc điểm gì nổi bật? Giải pháp tạo việc làm hàng đầu hiện nay?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Lời giải & Từ khóa trọng tâm:</div>
+                <ul>
+                    <li><b>Đặc điểm đô thị hóa:</b> Diễn ra <span class="keyword">chậm chạp</span>, trình độ đô thị hóa <span class="keyword">thấp</span>, phân bố đô thị <span class="keyword">không đều</span> giữa các vùng.</li>
+                    <li><b>Giải pháp tạo việc làm tốt nhất:</b> Da dạng hóa các <span class="keyword">hoạt động sản xuất</span>, đẩy mạnh phát triển <span class="keyword">các ngành dịch vụ</span> và công nghiệp.</li>
+                </ul>
             </div>
-        </section>
-        <!-- LỚP 11 -->
-        <section class="grade-section">
-            <h2 class="grade-title">📌 II. ĐỊA LÍ LỚP 11 - CÁC KHU VỰC & QUỐC GIA LỚN</h2>
+        </div>
+    </div>
+    <!-- CHỦ ĐỀ 3: ĐỊA LÝ CÁC NGÀNH VÀ VÙNG KINH TẾ VIỆT NAM -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 3: CÁC NGÀNH VÀ VÙNG KINH TẾ TRỌNG TÂM</h2>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>1. Hoa Kỳ (Mỹ)</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <ul>
-                        <li><strong>Tự nhiên:</strong> Lãnh thổ rộng lớn, giàu tài nguyên (miền Tây đồi núi khoáng sản, miền Trung đồng bằng phù sa, miền Đông than đá/sắt).</li>
-                        <li><strong>Kinh tế:</strong> Nền kinh tế hàng đầu thế giới. Công nghiệp dịch chuyển từ vùng Đông Bắc sang vùng "Vành đai Mặt Trời" (Phía Nam và Tây).</li>
-                    </ul>
-                </div>
+        <div class="qa-block">
+            <div class="question-title">Câu 4: Nông nghiệp Việt Nam đang chuyển dịch theo hướng nào? Ý nghĩa lớn nhất của việc phát triển cây công nghiệp?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Lời giải & Từ khóa trọng tâm:</div>
+                <ul>
+                    <li><b>Xu hướng chuyển dịch:</b> Giảm tỉ trọng ngành trồng trọt, tăng tỉ trọng ngành <span class="keyword">chăn nuôi và dịch vụ nông nghiệp</span>. Trong trồng trọt: Tăng cây công nghiệp, giảm cây lương thực.</li>
+                    <li><b>Ý nghĩa phát triển cây công nghiệp:</b> Tạo nguồn hàng <span class="keyword">nông sản xuất khẩu</span>, cung cấp nguyên liệu cho <span class="keyword">công nghiệp chế biến</span>, tận dụng tài nguyên đồi núi.</li>
+                </ul>
             </div>
+        </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>2. Liên minh Châu Âu (EU)</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <ul>
-                        <li><strong>Mô hình liên kết:</strong> Tự do di chuyển con người, hàng hóa, dịch vụ và tiền tệ (đồng Euro).</li>
-                        <li><strong>Thành tựu:</strong> Trung tâm kinh tế, thương mại lớn thế giới, đi đầu về khoa học công nghệ xanh.</li>
-                    </ul>
-                </div>
+        <div class="qa-block">
+            <div class="question-title">Câu 5: Nguyên nhân chủ yếu giúp ngành Dịch vụ (Thương mại, Du lịch, Giao thông) phát triển mạnh những năm gần đây?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Lời giải & Từ khóa trọng tâm:</div>
+                <ul>
+                    <li>Do sự <span class="keyword">tăng trưởng kinh tế</span> nhanh chóng và chất lượng <span class="keyword">cuộc sống nhân dân được nâng cao</span>.</li>
+                    <li>Mở rộng chính sách <span class="keyword">hội nhập quốc tế</span> và thu hút vốn đầu tư nước ngoài (FDI).</li>
+                </ul>
             </div>
+        </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>3. Đông Á & Đông Nam Á (ASEAN)</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <ul>
-                        <li><strong>Đông Á:</strong> Trung Quốc, Nhật Bản, Hàn Quốc có nền kinh tế phát triển năng động, quy mô sản xuất công nghiệp cực lớn.</li>
-                        <li><strong>Đông Nam Á (ASEAN):</strong> Giàu tài nguyên, lực lượng lao động đông/rẻ; Đang đẩy mạnh liên kết khu vực qua AFTA và Cộng đồng Kinh tế ASEAN (AEC).</li>
-                    </ul>
-                </div>
+        <div class="qa-block">
+            <div class="question-title">Câu 6: So sánh thế mạnh nổi bật nhất của Trung du Miền núi Bắc Bộ và Tây Nguyên?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Lời giải & Từ khóa trọng tâm:</div>
+                <ul>
+                    <li><b>Trung du Miền núi Bắc Bộ:</b> Khai thác <span class="keyword">khoáng sản</span>, phát triển <span class="keyword">thủy điện</span> (Thủy điện Hòa Bình, Sơn La) và cây công nghiệp nguồn gốc cận nhiệt/ôn đới (Chè).</li>
+                    <li><b>Tây Nguyên:</b> Trồng <span class="keyword">cây công nghiệp lâu năm</span> trên đất bazán (Cà phê, Hồ tiêu, Cao su) và phát triển <span class="keyword">thủy điện</span> trên hệ thống sông Sê San, Srêpôk.</li>
+                </ul>
             </div>
-        </section>
-        <!-- LỚP 12 -->
-        <section class="grade-section">
-            <h2 class="grade-title">📌 III. ĐỊA LÍ LỚP 12 - TRỌNG TÂM ĐỊA LÍ VIỆT NAM & ATLAT</h2>
+        </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>1. Địa lí Tự nhiên Việt Nam</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <ul>
-                        <li><strong>Vị trí địa lý:</strong> Nội chí tuyến Bán cầu Bắc, trong vùng gió mùa châu Á ➔ Quy định tính chất nhiệt đới ẩm gió mùa.</li>
-                        <li><strong>Địa hình:</strong> 3/4 đồi núi nhưng chủ yếu núi thấp (< 1000m chiếm 85%), hướng núi chính là Tây Bắc - Đông Nam và Hướng vòng cung.</li>
-                        <li><strong>Khí hậu:</strong> Nhiệt đới ẩm gió mùa. Gió mùa Đông Bắc (mùa đông lạnh khô/ẩm), Gió mùa Tây Nam (mùa hè mưa nhiều, gây hiệu ứng Phơn khô nóng ở Bắc Trung Bộ).</li>
-                    </ul>
-                </div>
+        <div class="qa-block">
+            <div class="question-title">Câu 7: Vấn đề quan trọng nhất trong sử dụng tự nhiên ở Đồng bằng sông Cửu Long và Đông Nam Bộ?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Lời giải & Từ khóa trọng tâm:</div>
+                <ul>
+                    <li><b>Đồng bằng sông Cửu Long:</b> Vấn đề chủ yếu là <span class="keyword">xâm nhập mặn</span> và thiếu nước ngọt trong mùa khô $\implies$ Cần <span class="keyword">chuyển đổi cơ cấu cây trồng</span>, chủ động tích trữ nước ngọt.</li>
+                    <li><b>Đông Nam Bộ:</b> Vấn đề cốt lõi là <span class="keyword">thủy lợi</span> để giải quyết nước tưới mùa khô và <span class="keyword">bảo vệ rừng nguồn nước</span>.</li>
+                </ul>
             </div>
+        </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>2. Dân cư & Ngành Kinh tế Việt Nam</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <ul>
-                        <li><strong>Dân cư:</strong> Đông dân, đa dân tộc, cơ cấu dân số đang già hóa, phân bố không đều (tập trung đông ở đồng bằng/đô thị).</li>
-                        <li><strong>Nông nghiệp:</strong> Chuyển từ tự túc sang sản xuất hàng hóa quy mô lớn, đẩy mạnh cây công nghiệp lâu năm.</li>
-                        <li><strong>Công nghiệp:</strong> Chuyển dịch cơ cấu theo hướng tăng tỷ trọng công nghiệp chế biến, giảm công nghiệp khai khoáng.</li>
-                    </ul>
-                </div>
+        <div class="qa-block">
+            <div class="question-title">Câu 8: Ý nghĩa chiến lược của việc phát triển Kinh tế biển và Hải đảo ở nước ta?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Lời giải & Từ khóa trọng tâm:</div>
+                <ul>
+                    <li>Khai thác hiệu quả <span class="keyword">nguồn lợi hải sản, khoáng sản</span> (dầu khí), du lịch và giao thông vận tải biển.</li>
+                    <li>Khẳng định <span class="keyword">chủ quyền lãnh thổ</span>, giữ vững quốc phòng - an ninh vùng biển đảo của Tổ quốc.</li>
+                </ul>
             </div>
+        </div>
+    </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>3. Các Vùng Kinh Tế Trọng Điểm & Bẫy Thi Atlat</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <ul>
-                        <li><strong>TD&MN Bắc Bộ:</strong> Khai thác khoáng sản, thủy điện lớn (Sông Đà), cây trồng gốc cận nhiệt/ôn đới (Chè).</li>
-                        <li><strong>Đồng bằng Sông Hồng:</strong> Mật độ dân số cao nhất, thâm canh lúa nước, công nghiệp hiện đại.</li>
-                        <li><strong>Tây Nguyên:</strong> Đất đỏ badan, chuyên canh **cây công nghiệp lâu năm lớn nhất** (Cà phê, cao su, tiêu).</li>
-                        <li><strong>Đồng bằng Sông Cửu Long:</strong> Vùng vựa lúa, thủy sản lớn nhất nước. Hạn chế lớn nhất: Xâm nhập mặn mùa khô.</li>
-                    </ul>
-                    <div class="exercise-box">
-                        🎯 <strong>BÍ KÍP ĐỌC ATLAT:</strong> Đề hỏi <em>"Tỉnh nào sau đây..."</em> hoặc <em>"Trung tâm công nghiệp nào có quy mô..."</em> ➔ Mở ngay **Trang 3 (Ký hiệu chung)** đối chiếu hình tròn/màu sắc trước khi dóng vào trang vùng!
-                    </div>
-                </div>
-            </div>
-        </section>
+</div>
 
-    </div> <!-- Đóng math-container -->
-
-    <script>
-        function toggleTheme() {
-            document.body.classList.toggle('dark-mode');
-            let btn = document.getElementById('theme-toggle');
-            if (document.body.classList.contains('dark-mode')) {
-                btn.textContent = '☀️ Chế độ sáng';
-            } else {
-                btn.textContent = '🌙 Chế độ tối';
-            }
-        }
-
-        function searchTopic() {
-            let input = document.getElementById('search-input').value.toLowerCase().trim();
-            let cards = document.getElementsByClassName('topic-card');
-
-            for (let i = 0; i < cards.length; i++) {
-                let text = cards[i].innerText.toLowerCase();
-                if (text.includes(input)) {
-                    cards[i].style.display = "block";
-                } else {
-                    cards[i].style.display = "none";
-                }
-            }
-        }
-    </script>
 </body>
 </html>
