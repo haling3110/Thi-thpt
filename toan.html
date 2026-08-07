@@ -1,403 +1,1230 @@
-<!-- LỚP 10 -->
-        <section class="grade-section">
-            <h2 class="grade-title">📌 CHƯƠNG TRÌNH LỚP 10</h2>
-            
-            <!-- Mục 1 -->
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>1. Hàm số bậc nhất, bậc 2</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Hàm số bậc nhất y = ax + b (a ≠ 0). Hàm số bậc hai y = ax² + bx + c (a ≠ 0) có đồ thị Parabol.</p>
-                    <p><strong>Công thức trọng tâm:</strong>
-                        <ul>
-                            <li>Đỉnh Parabol: I(-b/2a ; -Δ/4a) với Δ = b² - 4ac</li>
-                            <li>Trục đối xứng: x = -b/2a</li>
-                            <li>Sự biến thiên: a > 0 thì bề lõm quay lên trên (giảm trên (-∞; -b/2a), tăng trên (-b/2a; +∞)); a < 0 thì ngược lại.</li>
-                        </ul>
-                    </p>
-                    <div class="exercise-box">
-                        ✏️ <strong>Bài tập mẫu & Lời giải:</strong> Tìm tọa độ đỉnh và lập bảng biến thiên của y = x² - 4x + 3.<br>
-                        <em>Giải:</em> a = 1, b = -4, c = 3. Hoành độ đỉnh x = -(-4)/(2·1) = 2. Tung độ y = 2² - 4(2) + 3 = -1.<br>
-                        👉 Đỉnh I(2; -1), trục đối xứng x = 2. Do a = 1 > 0 nên hàm số nghịch biến trên (-∞; 2) và đồng biến trên (2; +∞).
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mục 2 -->
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>2. Phương trình, bất phương trình</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Phương trình bậc hai ax² + bx + c = 0 và Bất phương trình bậc hai ax² + bx + c > 0 (hoặc < 0, ≥ 0, ≤ 0).</p>
-                    <p><strong>Công thức trọng tâm:</strong>
-                        <ul>
-                            <li>Định lý Vi-ét: x₁ + x₂ = -b/a  và  x₁·x₂ = c/a</li>
-                            <li>Quy tắc xét dấu tam thức bậc hai: "Trong trái, ngoài cùng" (Giữa 2 nghiệm thì trái dấu với a, ngoài khoảng 2 nghiệm thì cùng dấu với a).</li>
-                        </ul>
-                    </p>
-                    <div class="exercise-box">
-                        ✏️ <strong>Bài tập mẫu & Lời giải:</strong> Giải bất phương trình x² - 5x + 6 ≤ 0.<br>
-                        <em>Giải:</em> Cho x² - 5x + 6 = 0 ⇔ x = 2 hoặc x = 3.<br>
-                        Hệ số a = 1 > 0. Áp dụng "trong trái ngoài cùng", biểu thức ≤ 0 (lấy dấu âm, tức trái dấu với a) ở trong khoảng 2 nghiệm.<br>
-                        👉 Tập nghiệm S = [2; 3].
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mục 3 -->
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>3. Hệ phương trình</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Hệ hai phương trình bậc nhất hai ẩn và Hệ phương trình đối xứng (khi thay đổi vai trò x, y thì hệ không đổi).</p>
-                    <p><strong>Phương pháp giải:</strong>
-                        <ul>
-                            <li>Phương pháp thế hoặc Cộng đại số (dùng cho hệ bậc nhất).</li>
-                            <li>Đặt ẩn phụ: S = x + y và P = x·y (ĐK: S² ≥ 4P). Khi đó x, y là 2 nghiệm của phương trình t² - St + P = 0.</li>
-                        </ul>
-                    </p>
-                    <div class="exercise-box">
-                        ✏️ <strong>Bài tập mẫu & Lời giải:</strong> Giải hệ phương trình { x + y = 5 ; x·y = 6 }.<br>
-                        <em>Giải:</em> Ta có S = 5, P = 6. Vì S² - 4P = 25 - 24 = 1 > 0 nên x, y là nghiệm của t² - 5t + 6 = 0.<br>
-                        Giải ra được t = 2 hoặc t = 3.<br>
-                        👉 Hệ có 2 nghiệm (x; y) là (2; 3) và (3; 2).
-                    </div>
-                </div>
-            </div>
-            <!-- Mục 4 -->
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>4. Véc tơ</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Véc-tơ là đoạn thẳng có hướng. Cho a = (x₁; y₁) và b = (x₂; y₂).</p>
-                    <p><strong>Công thức trọng tâm:</strong>
-                        <ul>
-                            <li>Phép toán: a + b = (x₁+x₂; y₁+y₂) ; k·a = (k·x₁; k·y₁)</li>
-                            <li>Tích vô hướng: a·b = x₁·x₂ + y₁·y₂</li>
-                            <li>Độ dài véc-tơ: |a| = √(x₁² + y₁²)</li>
-                            <li>Góc giữa 2 véc-tơ: cos(a, b) = (a·b) / (|a|·|b|)</li>
-                        </ul>
-                    </p>
-                    <div class="exercise-box">
-                        ✏️ <strong>Bài tập mẫu & Lời giải:</strong> Cho A(1; 2) và B(4; 6). Tính tọa độ véc-tơ AB và độ dài đoạn AB.<br>
-                        <em>Giải:</em> Véc-tơ AB = (x<sub>B</sub> - x<sub>A</sub>; y<sub>B</sub> - y<sub>A</sub>) = (4 - 1; 6 - 2) = (3; 4).<br>
-                        Độ dài đoạn AB = |AB| = √(3² + 4²) = √(9 + 16) = √25 = 5.<br>
-                        👉 Kết quả: AB = (3; 4) và độ dài AB = 5.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mục 5 -->
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>5. Hình học tọa độ</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Đường thẳng và Đường tròn trong mặt phẳng tọa độ Oxy.</p>
-                    <p><strong>Công thức trọng tâm:</strong>
-                        <ul>
-                            <li>Phương trình đường thẳng đi qua M(x₀; y₀) có VTPT n(A; B): Ax + By + C = 0 (với C = -Ax₀ - By₀).</li>
-                            <li>Khoảng cách từ M(x₀; y₀) đến d: h = |Ax₀ + By₀ + C| / √(A² + B²)</li>
-                            <li>Phương trình đường tròn tâm I(a; b) bán kính R: (x - a)² + (y - b)² = R²</li>
-                        </ul>
-                    </p>
-                    <div class="exercise-box">
-                        ✏️ <strong>Bài tập mẫu & Lời giải:</strong> Viết phương trình đường tròn tâm I(1; 2) đi qua điểm A(4; 6).<br>
-                        <em>Giải:</em> Bán kính R chính là độ dài đoạn IA.<br>
-                        R = IA = √[(4 - 1)² + (6 - 2)²] = √(3² + 4²) = 5.<br>
-                        👉 Phương trình đường tròn là: (x - 1)² + (y - 2)² = 25.
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- LỚP 11 -->
-        <section class="grade-section">
-            <h2 class="grade-title">📌 CHƯƠNG TRÌNH LỚP 11</h2>
-
-            <!-- Mục 1 -->
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>1. Hàm số lượng giác</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Các hàm số tuần hoàn y = sin x, y = cos x, y = tan x, y = cot x.</p>
-                    <p><strong>Tính chất trọng tâm:</strong>
-                        <ul>
-                            <li>y = sin x, y = cos x: Tập xác định D = ℝ, tập giá trị [-1; 1], chu kỳ T = 2π.</li>
-                            <li>Hàm số chẵn: y = cos x (cos(-x) = cos x). Hàm số lẻ: y = sin x, y = tan x, y = cot x.</li>
-                            <li>Công thức cơ bản: sin²x + cos²x = 1 ; tan x = sin x / cos x (x ≠ π/2 + kπ).</li>
-                        </ul>
-                    </p>
-                    <div class="exercise-box">
-                        ✏️ <strong>Bài tập mẫu & Lời giải:</strong> Tìm tập xác định của hàm số y = 1 / (sin x).<br>
-                        <em>Giải:</em> Điều kiện để hàm số xác định là mẫu số khác 0 ⇔ sin x ≠ 0 ⇔ x ≠ kπ (k ∈ ℤ).<br>
-                        👉 Tập xác định: D = ℝ \ {kπ | k ∈ ℤ}.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mục 2 -->
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>2. Phương trình lượng giác</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Phương trình chứa ẩn trong các hàm số lượng giác.</p>
-                    <p><strong>Công thức nghiệm cơ bản:</strong>
-                        <ul>
-                            <li>sin x = sin α ⇔ x = α + k2π hoặc x = π - α + k2π (k ∈ ℤ)</li>
-                            <li>cos x = cos α ⇔ x = ±α + k2π (k ∈ ℤ)</li>
-                            <li>tan x = tan α ⇔ x = α + kπ (k ∈ ℤ)</li>
-                        </ul>
-                    </p>
-                    <div class="exercise-box">
-                        ✏️ <strong>Bài tập mẫu & Lời giải:</strong> Giải phương trình 2sin x - 1 = 0.<br>
-                        <em>Giải:</em> 2sin x - 1 = 0 ⇔ sin x = 1/2 ⇔ sin x = sin(π/6).<br>
-                        👉 Nghiệm: x = π/6 + k2π hoặc x = π - π/6 + k2π = 5π/6 + k2π (k ∈ ℤ).
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mục 3 -->
-             <div class="topic-card">
-                <div class="topic-header">
-                    <h3>3. Dãy số</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Tập hợp các số thực được sắp xếp theo thứ tự u₁, u₂, u₃, ..., uₙ. Ký hiệu (uₙ).</p>
-                    <p><strong>Tính chất trọng tâm:</strong>
-                        <ul>
-                            <li>Dãy số tăng: uₙ₊₁ > uₙ (hoặc uₙ₊₁ - uₙ > 0) với mọi n ∈ ℕ*.</li>
-                            <li>Dãy số giảm: uₙ₊₁ < uₙ (hoặc uₙ₊₁ - uₙ < 0) với mọi n ∈ ℕ*.</li>
-                            <li>Dãy bị chặn: Bị chặn trên nếu uₙ ≤ M, bị chặn dưới nếu uₙ ≥ m.</li>
-                        </ul>
-                    </p>
-                    <div class="exercise-box">
-                        ✏️ <strong>Bài tập mẫu & Lời giải:</strong> Xét tính tăng/giảm của dãy số uₙ = 2n + 1.<br>
-                        <em>Giải:</em> Ta có uₙ₊₁ = 2(n + 1) + 1 = 2n + 3.<br>
-                        Xét hiệu uₙ₊₁ - uₙ = (2n + 3) - (2n + 1) = 2 > 0 với mọi n ∈ ℕ*.<br>
-                        👉 Dãy số (uₙ) là dãy số tăng.
-                    </div>
-                </div>
-            </div>
-            <!-- Mục 4 -->
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>4. Cấp số cộng</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Dãy số (uₙ) trong đó kể từ số hạng thứ 2, mỗi số hạng đều bằng số hạng đứng ngay trước nó cộng với một số không đổi d (công sai).</p>
-                    <p><strong>Công thức trọng tâm:</strong>
-                        <ul>
-                            <li>Công thức tổng quát: uₙ = u₁ + (n - 1)d</li>
-                            <li>Tính chất: uₖ = (uₖ₋₁ + uₖ₊₁) / 2 (với k ≥ 2)</li>
-                            <li>Tổng n số hạng đầu: Sₙ = n(u₁ + uₙ) / 2 = [2u₁ + (n - 1)d] · n / 2</li>
-                        </ul>
-                    </p>
-                    <div class="exercise-box">
-                        ✏️ <strong>Bài tập mẫu & Lời giải:</strong> Cho cấp số cộng có u₁ = 3 và d = 2. Tìm u₁₀ và S₁₀.<br>
-                        <em>Giải:</em> u₁₀ = u₁ + 9d = 3 + 9(2) = 21.<br>
-                        S₁₀ = 10 · (u₁ + u₁₀) / 2 = 10 · (3 + 21) / 2 = 120.<br>
-                        👉 Đáp số: u₁₀ = 21 và S₁₀ = 120.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mục 5 -->
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>5. Cấp số nhân</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Dãy số (uₙ) trong đó kể từ số hạng thứ 2, mỗi số hạng đều bằng số hạng đứng ngay trước nó nhân với một số không đổi q (công bội).</p>
-                    <p><strong>Công thức trọng tâm:</strong>
-                        <ul>
-                            <li>Công thức tổng quát: uₙ = u₁ · qⁿ⁻¹</li>
-                            <li>Tính chất: uₖ² = uₖ₋₁ · uₖ₊₁ (với k ≥ 2)</li>
-                            <li>Tổng n số hạng đầu (q ≠ 1): Sₙ = u₁ · (1 - qⁿ) / (1 - q)</li>
-                        </ul>
-                    </p>
-                    <div class="exercise-box">
-                        ✏️ <strong>Bài tập mẫu & Lời giải:</strong> Cho cấp số nhân có u₁ = 2, công bội q = 3. Tìm u₅.<br>
-                        <em>Giải:</em> Áp dụng công thức: u₅ = u₁ · q⁴ = 2 · 3⁴ = 2 · 81 = 162.<br>
-                        👉 Đáp số: u₅ = 162.
-                    </div>
-                </div>
-            </div>
-            <!-- Mục 6 -->
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>6. Xác suất</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Không gian mẫu Ω (tập tất cả các kết quả có thể xảy ra). Biến cố A ⊂ Ω.</p>
-                    <p><strong>Công thức trọng tâm:</strong>
-                        <ul>
-                            <li>Xác suất cổ điển: P(A) = n(A) / n(Ω) (với 0 ≤ P(A) ≤ 1)</li>
-                            <li>Biến cố đối Ā: P(Ā) = 1 - P(A)</li>
-                            <li>Quy tắc cộng (A, B xung khắc): P(A ∪ B) = P(A) + P(B)</li>
-                            <li>Quy tắc nhân (A, B độc lập): P(A ∩ B) = P(A) · P(B)</li>
-                        </ul>
-                    </p>
-                    <div class="exercise-box">
-                        ✏️ <strong>Bài tập mẫu & Lời giải:</strong> Gieo một con súc sắc cân đối 6 mặt 1 lần. Tính xác suất để xuất hiện mặt có số chấm là số chẵn.<br>
-                        <em>Giải:</em> Không gian mẫu Ω = {1; 2; 3; 4; 5; 6} ⇒ n(Ω) = 6.<br>
-                        Biến cố A: "Số chấm là số chẵn" ⇒ A = {2; 4; 6} ⇒ n(A) = 3.<br>
-                        👉 Xác suất: P(A) = n(A) / n(Ω) = 3 / 6 = 0,5.
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- LỚP 12 -->
-        <section class="grade-section">
-            <h2 class="grade-title">🔥 CHƯƠNG TRÌNH LỚP 12</h2>
-
-            <!-- Mục 1 -->
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>1. Hàm số & Ứng dụng đạo hàm</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Tính đơn điệu, cực trị, giá trị lớn nhất/nhỏ nhất (GTLN/GTNN) và tiệm cận của đồ thị hàm số.</p>
-                    <p><strong>Công thức & Lý thuyết trọng tâm:</strong>
-                        <ul>
-                            <li><strong>Đơn điệu:</strong> Hàm đồng biến trên K ⇔ y' ≥ 0 ∀x ∈ K; Nghịch biến ⇔ y' ≤ 0 ∀x ∈ K.</li>
-                            <li><strong>Cực trị:</strong> x₀ là điểm cực trị khi y' đổi dấu qua x₀ (Đổi dấu từ + sang - là Cực đại, từ - sang + là Cực tiểu).</li>
-                            <li><strong>Tiệm cận đứng (TCĐ):</strong> x = x₀ nếu lim<sub>x→x₀⁺</sub> y = ±∞ hoặc lim<sub>x→x₀⁻</sub> y = ±∞.</li>
-                            <li><strong>Tiệm cận ngang (TCN):</strong> y = y₀ nếu lim<sub>x→+∞</sub> y = y₀ hoặc lim<sub>x→-∞</sub> y = y₀.</li>
-                        </ul>
-                    </p>
-                    <div class="exercise-box">
-                        ✏️ <strong>Bài tập mẫu & Lời giải:</strong> Tìm cực trị và đường tiệm cận của hàm số y = (2x - 1) / (x + 1).<br>
-                        <em>Giải:</em> TXĐ: D = ℝ \ {-1}.<br>
-                        • Đạo hàm: y' = [2(1) - (-1)(1)] / (x + 1)² = 3 / (x + 1)² > 0 ∀x ≠ -1.<br>
-                        ⇒ Hàm số không có cực trị (do y' không đổi dấu).<br>
-                        • Tiệm cận đứng: lim<sub>x→(-1)⁺</sub> y = -∞ ⇒ Đường thẳng x = -1 là TCĐ.<br>
-                        • Tiệm cận ngang: lim<sub>x→±∞</sub> y = 2 ⇒ Đường thẳng y = 2 là TCN.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mục 2 -->
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>2. Nguyên hàm - Tích phân</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> F(x) là nguyên hàm của f(x) nếu F'(x) = f(x). Tích phân ∫ₐᵇ f(x)dx = F(b) - F(a).</p>
-                    <p><strong>Bảng công thức nguyên hàm cơ bản:</strong>
-                        <ul>
-                            <li>∫ xⁿ dx = xⁿ⁺¹ / (n + 1) + C (với n ≠ -1)</li>
-                            <li>∫ (1/x) dx = ln|x| + C ; ∫ eˣ dx = eˣ + C</li>
-                            <li>∫ sin x dx = -cos x + C ; ∫ cos x dx = sin x + C</li>
-                            <li><strong>Tích phân từng phần:</strong> ∫ u dv = u·v - ∫ v du</li>
-                        </ul>
-                    </p>
-                    <div class="exercise-box">
-                        ✏️ <strong>Bài tập mẫu & Lời giải:</strong> Tính tích phân I = ∫₀¹ (2x + eˣ) dx.<br>
-                        <em>Giải:</em> Nguyên hàm của f(x) = 2x + eˣ là F(x) = x² + eˣ.<br>
-                        Áp dụng công thức Newton-Leibniz:<br>
-                        I = F(1) - F(0) = (1² + e¹) - (0² + e⁰) = (1 + e) - (0 + 1) = e.<br>
-                        👉 Đáp số: I = e.
-                    </div>
-                </div>
-            </div>
-            <!-- Mục 3 -->
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>3. Mũ - Logarit</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Lũy thừa, hàm số mũ y = aˣ và hàm số logarit y = logₐx (Điều kiện: a > 0, a ≠ 1, x > 0).</p>
-                    <p><strong>Công thức trọng tâm:</strong>
-                        <ul>
-                            <li>logₐ(b·c) = logₐb + logₐc ; logₐ(b / c) = logₐb - logₐc</li>
-                            <li>logₐ(bᵏ) = k·logₐb ; logₐα (b) = (1/α)·logₐb</li>
-                            <li><strong>Đạo hàm:</strong> (aˣ)' = aˣ·ln a ; (eˣ)' = eˣ ; (logₐx)' = 1 / (x·ln a)</li>
-                            <li><strong>Phương trình cơ bản:</strong> aˣ = b ⇔ x = logₐb ; logₐx = b ⇔ x = aᵇ</li>
-                        </ul>
-                    </p>
-                    <div class="exercise-box">
-                        ✏️ <strong>Bài tập mẫu & Lời giải:</strong> Giải phương trình log₂(x - 1) = 3.<br>
-                        <em>Giải:</em> Điều kiện x - 1 > 0 ⇔ x > 1.<br>
-                        Phương trình ⇔ x - 1 = 2³ ⇔ x - 1 = 8 ⇔ x = 9 (Thỏa mãn ĐK).<br>
-                        👉 Tập nghiệm: S = {9}.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mục 4 -->
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>4. Hình Oxyz (Hình học tọa độ Không gian)</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Khái niệm:</strong> Hệ trục tọa độ Oxyz với các véc-tơ đơn vị i, j, k. Tọa độ điểm và véc-tơ trong không gian.</p>
-                    <p><strong>Công thức trọng tâm:</strong>
-                        <ul>
-                            <li><strong>Mặt phẳng (P):</strong> Ax + By + Cz + D = 0 có VTPT n = (A; B; C).</li>
-                            <li><strong>Mặt cầu (S):</strong> (x - a)² + (y - b)² + (z - c)² = R² có tâm I(a; b; c), bán kính R.</li>
-                            <li><strong>Đường thẳng d:</strong> Phương trình chính tắc (x - x₀)/a = (y - y₀)/b = (z - z₀)/c có VTCP u = (a; b; c).</li>
-                            <li><strong>Khoảng cách từ M(x₀; y₀; z₀) đến (P):</strong> d(M, P) = |Ax₀ + By₀ + Cz₀ + D| / √(A² + B² + C²)</li>
-                        </ul>
-                    </p>
-                    <div class="exercise-box">
-                   ✏️ <strong>Bài tập mẫu & Lời giải:</strong> Viết phương trình mặt phẳng (P) đi qua M(1; 2; -1) và vuông góc với đường thẳng d có VTCP u = (2; 1; -3).<br>
-                        <em>Giải:</em> Vì (P) ⊥ d nên (P) nhận VTCP u = (2; 1; -3) làm VTPT n = (2; 1; -3).<br>
-                        Phương trình mặt phẳng (P) là:<br>
-                        2(x - 1) + 1(y - 2) - 3(z - (-1)) = 0<br>
-                        ⇔ 2x - 2 + y - 2 - 3z - 3 = 0 ⇔ 2x + y - 3z - 7 = 0.<br>
-                        👉 Kết quả: (P): 2x + y - 3z - 7 = 0.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </div> <!-- Đóng math-container -->
-
-    <script>
-        function toggleTheme() {
-            document.body.classList.toggle('dark-mode');
-            let btn = document.getElementById('theme-toggle');
-            if (document.body.classList.contains('dark-mode')) {
-                btn.textContent = '☀️ Chế độ sáng';
-            } else {
-                btn.textContent = '🌙 Chế độ tối';
-            }
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chương Trình Toán Lớp 10 - Chi Tiết & Bài Tập</title>
+    <!-- Thư viện MathJax hỗ trợ công thức Toán LaTeX -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --tiffany-blue: #00B2A9;       /* Màu Xanh Tiffany chủ đạo */
+            --tiffany-light: #E6F7F6;      /* Xanh Tiffany nhạt làm nền box */
+            --tiffany-dark: #005F5A;       /* Xanh Tiffany đậm cho chữ tiêu đề */
+            --text-main: #2C3E50;          /* Màu chữ chính (Xanh đen cực dễ đọc) */
+            --bg-color: #F4F9F9;           /* Nền trang nhẹ nhàng */
+            --card-bg: #FFFFFF;            /* Nền thẻ trắng */
+            --red-exercise: #E74C3C;       /* Màu ĐỎ nổi bật cho Đề bài tập */
+            --purple-highlight: #6C5CE7;   /* Màu Tím nhẹ cho nhấn mạnh công thức */
         }
 
-        function searchTopic() {
-            let input = document.getElementById('search-input').value.toLowerCase().trim();
-            let cards = document.getElementsByClassName('topic-card');
-
-            for (let i = 0; i < cards.length; i++) {
-                let text = cards[i].innerText.toLowerCase();
-                if (text.includes(input)) {
-                    cards[i].style.display = "block";
-                } else {
-                    cards[i].style.display = "none";
-                }
-            }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            line-height: 1.7;
         }
-    </script>
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, var(--tiffany-blue), var(--tiffany-dark));
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 20px rgba(0, 178, 169, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .topic-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-top: 5px solid var(--tiffany-blue);
+        }
+
+        .topic-header {
+            color: var(--tiffany-dark);
+            font-size: 1.6rem;
+            border-bottom: 2px solid var(--tiffany-blue);
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .section-block {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--tiffany-dark);
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .section-title::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 18px;
+            background-color: var(--tiffany-blue);
+            margin-right: 10px;
+            border-radius: 3px;
+        }
+
+        /* Đầu bài tập màu ĐỎ theo yêu cầu */
+        .exercise-title {
+            color: var(--red-exercise) !important;
+        }
+
+        .exercise-title::before {
+            background-color: var(--red-exercise) !important;
+        }
+
+        .content-box {
+            background-color: var(--tiffany-light);
+            padding: 18px 22px;
+            border-radius: 10px;
+            border-left: 5px solid var(--tiffany-blue);
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+            margin: 5px 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Màu chữ cho Đề bài tập (Màu Đỏ đô / Đỏ gạch dịu mắt) */
+        .exercise-list li {
+            font-weight: 600;
+            color: #C0392B;
+            margin-bottom: 14px;
+        }
+
+        /* Điểm nhấn công thức màu tím/xanh đậm */
+        b {
+            color: var(--purple-highlight);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>TOÁN HỌC LỚP 10 - TỔNG HỢP KIẾN THỨC & BÀI TẬP</h1>
+        <p>Hệ thống Lý thuyết, Công thức chi tiết và Đề bài tập vận dụng phong phú</p>
+    </header>
+
+    <!-- CHỦ ĐỀ 1: HÀM SỐ BẬC NHẤT, BẬC HAI -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 1: HÀM SỐ BẬC NHẤT & BẬC HAI</h2>
+
+        <div class="section-block">
+            <div class="section-title">I. Khái niệm về Hàm số</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Định nghĩa:</b> Cho tập hợp khác rỗng $D \subset \mathbb{R}$. Hàm số $y = f(x)$ xác định trên $D$ là một quy tắc cho tương ứng mỗi giá trị $x \in D$ với duy nhất một giá trị $y \in \mathbb{R}$. $D$ gọi là tập xác định (TXĐ).</li>
+                    <li><b>Tính đồng biến, nghịch biến:</b> Cho $x_1, x_2 \in (a; b)$ với $x_1 < x_2$:
+                        <ul>
+                            <li>Hàm số đồng biến trên $(a;b) \iff f(x_1) < f(x_2)$.</li>
+                            <li>Hàm số nghịch biến trên $(a;b) \iff f(x_1) > f(x_2)$.</li>
+                        </ul>
+                    </li>
+                    <li><b>Tính chẵn, lẻ:</b>
+                        <ul>
+                            <li>Chẵn: $\forall x \in D \implies -x \in D$ và $f(-x) = f(x)$ (Đồ thị đối xứng qua trục $Oy$).</li>
+                            <li>Lẻ: $\forall x \in D \implies -x \in D$ và $f(-x) = -f(x)$ (Đồ thị đối xứng qua gốc tọa độ $O$).</li>
+                        </ul>
+                        </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">II. Hàm số bậc nhất $y = ax + b \quad (a \neq 0)$</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Tập xác định:</b> $D = \mathbb{R}$.</li>
+                    <li><b>Chiều biến thiên:</b> Đồng biến trên $\mathbb{R}$ khi $a > 0$; Nghịch biến trên $\mathbb{R}$ khi $a < 0$.</li>
+                    <li><b>Đồ thị:</b> Là một đường thẳng đi qua các điểm $(0; b)$ và $\left(-\frac{b}{a}; 0\right)$. $a$ gọi là hệ số góc.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">III. Hàm số bậc hai $y = ax^2 + bx + c \quad (a \neq 0)$</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Tập xác định:</b> $D = \mathbb{R}$.</li>
+                    <li><b>Đỉnh Parabol:</b> $I\left(-\frac{b}{2a}; -\frac{\Delta}{4a}\right)$ với $\Delta = b^2 - 4ac$.</li>
+                    <li><b>Trục đối xứng:</b> Đường thẳng $x = -\frac{b}{2a}$.</li>
+                    <li><b>Bề lõm:</b> Hướng lên trên nếu $a > 0$ (giá trị nhỏ nhất $y_{\min} = -\frac{\Delta}{4a}$); Hướng xuống dưới nếu $a < 0$ (giá trị lớn nhất $y_{\max} = -\frac{\Delta}{4a}$).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title exercise-title">Bài tập vận dụng (Đề bài)</div>
+            <ol class="exercise-list">
+                <li>Tìm tập xác định $D$ của các hàm số sau:
+                    <br>a) $y = \frac{2x + 1}{x^2 - 3x + 2}$ 
+                    <br>b) $y = \sqrt{3 - x} + \frac{1}{\sqrt{x + 1}}$
+                </li>
+                <li>Xét tính chẵn / lẻ của các hàm số: $f(x) = x^4 - 2x^2 + 1$ và $g(x) = \frac{x^3 + x}{|x| + 1}$.</li>
+                <li>Xác định hàm số bậc nhất $y = ax + b$ biết đồ thị hàm số cắt trục tung tại điểm có tung độ bằng $-2$ và đi qua điểm $A(2; 4)$.</li>
+                <li>Lập bảng biến thiên và vẽ đồ thị (P) của hàm số $y = -x^2 + 4x - 3$. Từ đó xác định khoảng đồng biến, nghịch biến của hàm số.</li>
+                <li>Xác định các hệ số $a, b, c$ của Parabol $(P): y = ax^2 + bx + c$ biết $(P)$ có đỉnh $I(1; -4)$ và đi qua điểm $M(3; 0)$.</li>
+                <li>Cho hàm số $y = x^2 - 2mx + m^2 - 1$. Tìm tất cả các giá trị của $m$ để giá trị nhỏ nhất của hàm số trên đoạn $[0; 2]$ bằng $3$.</li>
+            </ol>
+        </div>
+    </div>
+    <!-- CHỦ ĐỀ 2: PHƯƠNG TRÌNH, BẤT PHƯƠNG TRÌNH -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 2: PHƯƠNG TRÌNH & BẤT PHƯƠNG TRÌNH</h2>
+
+        <div class="section-block">
+            <div class="section-title">I. Phương trình & Hệ thức Vi-ét</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Phương trình bậc hai:</b> $ax^2 + bx + c = 0 \quad (a \neq 0)$. Biệt thức $\Delta = b^2 - 4ac$.
+                        <ul>
+                            <li>$\Delta > 0$: Phương trình có 2 nghiệm phân biệt $x_{1,2} = \frac{-b \pm \sqrt{\Delta}}{2a}$.</li>
+                            <li>$\Delta = 0$: Phương trình có nghiệm kép $x_1 = x_2 = -\frac{b}{2a}$.</li>
+                            <li>$\Delta < 0$: Phương trình vô nghiệm trên $\mathbb{R}$.</li>
+                        </ul>
+                    </li>
+                    <li><b>Định lý Vi-ét:</b> Nếu phương trình có 2 nghiệm $x_1, x_2$, thì $\begin{cases} S = x_1 + x_2 = -\frac{b}{a} \\ P = x_1 x_2 = \frac{c}{a} \end{cases}$.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">II. Dấu của Nhị thức bậc nhất & Tam thức bậc hai</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Nhị thức bậc nhất $f(x) = ax + b \quad (a \neq 0)$:</b> Nghiệm $x = -\frac{b}{a}$. Quy tắc dấu: <i>"Trái trái, phải cùng"</i>.</li>
+                    <li><b>Tam thức bậc hai $f(x) = ax^2 + bx + c \quad (a \neq 0)$:</b>
+                        <ul>
+                            <li>Nếu $\Delta < 0$: $f(x)$ luôn cùng dấu với $a$ với mọi $x \in \mathbb{R}$.</li>
+                            <li>Nếu $\Delta = 0$: $f(x)$ cùng dấu với $a$ với mọi $x \neq -\frac{b}{2a}$.</li>
+                            <li>Nếu $\Delta > 0$ ($f(x)$ có 2 nghiệm $x_1 < x_2$): Quy tắc dấu: <i>"Trong khác, ngoài cùng"</i>.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">III. Phương trình chứa dấu căn thức cơ bản</div>
+            <div class="content-box">
+                <ul>
+                    <li>$\sqrt{f(x)} = g(x) \iff \begin{cases} g(x) \ge 0 \\ f(x) = [g(x)]^2 \end{cases}$</li>
+                    <li>$\sqrt{f(x)} = \sqrt{g(x)} \iff \begin{cases} f(x) \ge 0 \\ f(x) = g(x) \end{cases}$</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title exercise-title">Bài tập vận dụng (Đề bài)</div>
+            <ol class="exercise-list">
+                <li>Cho phương trình $x^2 - 2(m+1)x + m^2 + 2 = 0$.
+                    <br>a) Tìm $m$ để phương trình có hai nghiệm phân biệt.
+                    <br>b) Tìm $m$ để phương trình có hai nghiệm $x_1, x_2$ thỏa mãn $x_1^2 + x_2^2 = 12$.
+                </li>
+                <li>Lập bảng xét dấu của biểu thức $P(x) = \frac{(2x - 4)(x^2 - 3x + 2)}{-x^2 + 4}$.</li>
+                <li>Giải các bất phương trình sau:
+                    <br>a) $3x^2 - 10x + 3 \le 0$
+                    <br>b) $\frac{x^2 - 5x + 6}{x - 1} \ge 0$
+                </li>
+                <li>Tìm tất cả giá trị của $m$ để tam thức bậc hai $f(x) = x^2 - 2mx + 2m + 3 > 0$ đúng với mọi $x \in \mathbb{R}$.</li>
+                <li>Giải các phương trình chứa căn sau:
+                    <br>a) $\sqrt{2x^2 - 5x + 3} = x - 1$
+                    <br>b) $\sqrt{x^2 - 3x + 4} = \sqrt{2x - 2}$
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- CHỦ ĐỀ 3: HỆ PHƯƠNG TRÌNH -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 3: HỆ PHƯƠNG TRÌNH</h2>
+
+        <div class="section-block">
+            <div class="section-title">I. Hệ phương trình bậc nhất nhiều ẩn</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Hệ 2 ẩn:</b> $\begin{cases} a_1 x + b_1 y = c_1 \\ a_2 x + b_2 y = c_2 \end{cases}$. Giải bằng Thế, Cộng đại số hoặc Cramer: $D = a_1 b_2 - a_2 b_1$.</li>
+                    <li><b>Hệ 3 ẩn bậc nhất:</b> Giải bằng phương pháp Gauss (khử dần ẩn số).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">II. Các dạng hệ phương trình phi tuyến thường gặp</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>1. Hệ đối xứng loại 1:</b> Đặt $S = x + y, P = xy$ (điều kiện $S^2 \ge 4P$).</li>
+                    <li><b>2. Hệ đối xứng loại 2:</b> Lấy PT (1) trừ PT (2) theo vế để xuất hiện nhân tử $(x - y)$.</li>
+                    <li><b>3. Hệ đẳng cấp bậc hai:</b> Xét $y = 0$, rồi đặt $x = ky$ với $y \neq 0$.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title exercise-title">Bài tập vận dụng (Đề bài)</div>
+            <ol class="exercise-list">
+                <li>Giải hệ phương trình bậc nhất: $\begin{cases} 3x - 2y = 8 \\ 2x + 5y = -1 \end{cases}$</li>
+                <li>Giải hệ phương trình đối xứng loại 1: $\begin{cases} x + y + xy = 11 \\ x^2 + y^2 + 3(x + y) = 28 \end{cases}$</li>
+                <li>Giải hệ phương trình đối xứng loại 2: $\begin{cases} x^2 = 3x + 2y \\ y^2 = 3y + 2x \end{cases}$</li>
+                <li>Giải hệ phương trình đẳng cấp: $\begin{cases} x^2 - 3xy + 2y^2 = 0 \\ 2x^2 + y^2 = 6 \end{cases}$</li>
+            </ol>
+        </div>
+    </div>
+    <!-- CHỦ ĐỀ 4: VÉCTƠ -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 4: VÉCTƠ & CÁC PHÉP TOÁN</h2>
+
+        <div class="section-block">
+            <div class="section-title">I. Khái niệm Véctơ</div>
+            <div class="content-box">
+                <ul>
+                    <li>Véctơ là một đoạn thẳng có hướng. Ký hiệu: $\vec{AB}$ hoặc $\vec{a}$.</li>
+                    <li>Độ dài véctơ: $|\vec{AB}| = AB$. Véctơ-không ký hiệu là $\vec{0}$.</li>
+                    <li>Hai véctơ cùng phương nếu giá của chúng song song hoặc trùng nhau.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">II. Các phép toán Véctơ & Quy tắc cần nhớ</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Quy tắc 3 điểm:</b> $\vec{AB} + \vec{BC} = \vec{AC}$; $\vec{AB} - \vec{AC} = \vec{CB}$.</li>
+                    <li><b>Quy tắc hình bình hành $ABCD$:</b> $\vec{AB} + \vec{AD} = \vec{AC}$.</li>
+                    <li><b>Trung điểm & Trọng tâm:</b>
+                        <ul>
+                            <li>$I$ là trung điểm $AB \iff \vec{MA} + \vec{MB} = 2\vec{MI}$.</li>
+                            <li>$G$ là trọng tâm $\triangle ABC \iff \vec{MA} + \vec{MB} + \vec{MC} = 3\vec{MG}$.</li>
+                        </ul>
+                    </li>
+                    <li><b>Tích vô hướng:</b> $\vec{a} \cdot \vec{b} = |\vec{a}| \cdot |\vec{b}| \cdot \cos(\vec{a}, \vec{b})$.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">III. Tọa độ Véctơ</div>
+            <div class="content-box">
+                Cho $\vec{a} = (x_1; y_1), \vec{b} = (x_2; y_2)$ và điểm $A(x_A; y_A), B(x_B; y_B)$:
+                <ul>
+                    <li>$\vec{a} \pm \vec{b} = (x_1 \pm x_2; y_1 \pm y_2); \quad k\vec{a} = (kx_1; ky_1)$.</li>
+                    <li>$\vec{AB} = (x_B - x_A; y_B - y_A)$.</li>
+                    <li>Tích vô hướng: $\vec{a} \cdot \vec{b} = x_1 x_2 + y_1 y_2$.</li>
+                    <li>Độ dài véctơ: $|\vec{a}| = \sqrt{x_1^2 + y_1^2}$.</li>
+                    <li>Góc giữa 2 véctơ: $\cos(\vec{a}, \vec{b}) = \frac{x_1 x_2 + y_1 y_2}{\sqrt{x_1^2 + y_1^2} \cdot \sqrt{x_2^2 + y_2^2}}$.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title exercise-title">Bài tập vận dụng (Đề bài)</div>
+            <ol class="exercise-list">
+                <li>Cho hình bình hành $ABCD$ tâm $O$. Chứng minh rằng $\vec{OA} + \vec{OB} + \vec{OC} + \vec{OD} = \vec{0}$.</li>
+                <li>Cho tam giác $ABC$. Gọi $M$ là trung điểm $AB$, $N$ là điểm trên cạnh $AC$ sao cho $AN = 2NC$. Biểu diễn $\vec{MN}$ theo $\vec{AB}$ và $\vec{AC}$.</li>
+                <li>Cho tam giác $ABC$ đều cạnh $a$. Tính độ dài véctơ $\vec{u} = \vec{AB} + \vec{AC}$.</li>
+                <li>Trong mặt phẳng $Oxy$, cho $A(1; 3), B(-2; 1), C(4; -1)$. Tìm tọa độ điểm $D$ sao cho $ABCD$ là hình bình hành.</li>
+                <li>Cho $\vec{a} = (2; -1)$ và $\vec{b} = (1; 3)$. Tính tích vô hướng $\vec{a} \cdot \vec{b}$ và góc giữa hai véctơ.</li>
+            </ol>
+        </div>
+    </div>
+    <!-- CHỦ ĐỀ 5: HÌNH HỌC TỌA ĐỘ (OXY) -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 5: HÌNH HỌC TỌA ĐỘ TRONG MẶT PHẲNG (OXY)</h2>
+
+        <div class="section-block">
+            <div class="section-title">I. Phương trình Đường thẳng</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>VTPT & VTCP:</b> $\vec{n} = (a; b) \implies \vec{u} = (-b; a)$.</li>
+                    <li><b>PTTQ:</b> $a(x - x_0) + b(y - y_0) = 0 \iff ax + by + c = 0$.</li>
+                    <li><b>PTTS:</b> $\begin{cases} x = x_0 + u_1 t \\ y = y_0 + u_2 t \end{cases}$.</li>
+                    <li><b>Khoảng cách từ $M(x_0; y_0)$ đến $\Delta: ax + by + c = 0$:</b> $d(M, \Delta) = \frac{|a x_0 + b y_0 + c|}{\sqrt{a^2 + b^2}}$.</li>
+                    <li><b>Góc giữa 2 đường thẳng:</b> $\cos(\Delta_1, \Delta_2) = \frac{|a_1 a_2 + b_1 b_2|}{\sqrt{a_1^2 + b_1^2} \cdot \sqrt{a_2^2 + b_2^2}}$.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">II. Phương trình Đường tròn</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Chính chính:</b> $(x - a)^2 + (y - b)^2 = R^2$ (Tâm $I(a; b)$, bán kính $R$).</li>
+                    <li><b>Khai triển:</b> $x^2 + y^2 - 2ax - 2by + c = 0$ ($a^2 + b^2 - c > 0$, $R = \sqrt{a^2 + b^2 - c}$).</li>
+                    <li><b>Tiếp tuyến tại $M_0(x_0; y_0)$:</b> $(x_0 - a)(x - a) + (y_0 - b)(y - b) = R^2$.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">III. Ba đường Conic cơ bản</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Elip (E):</b> $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 \quad (a^2 = b^2 + c^2)$. Trục lớn $2a$, trục nhỏ $2b$, tiêu cự $2c$.</li>
+                    <li><b>Parabol (P):</b> $y^2 = 2px \quad (p > 0)$. Tiêu điểm $F\left(\frac{p}{2}; 0\right)$, đường chuẩn $x = -\frac{p}{2}$.</li>
+                    <li><b>Hyperbol (H):</b> $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1 \quad (c^2 = a^2 + b^2)$.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title exercise-title">Bài tập vận dụng (Đề bài)</div>
+            <ol class="exercise-list">
+                <li>Cho tam giác $ABC$ có $A(1; 3), B(-2; 1), C(2; 5)$.
+                    <br>a) Viết PTTQ của đường thẳng $AB$.
+                    <br>b) Viết PTTS của đường cao $AH$ kẻ từ $A$.
+                </li>
+                <li>Viết phương trình đường thẳng $\Delta$ đi qua $M(2; 1)$ và cách $A(1; 4)$ một khoảng bằng $2$.</li>
+                <li>Lập phương trình đường tròn $(C)$ đi qua ba điểm $M(0; 4), N(3; 1), P(4; 4)$.</li>
+                <li>Cho đường tròn $(C): x^2 + y^2 - 4x + 2y - 4 = 0$. Viết phương trình tiếp tuyến song song với $d: 3x - 4y + 5 = 0$.</li>
+                <li>Lập phương trình chính chính của Elip $(E)$ có độ dài trục lớn bằng $10$ và tiêu cự bằng $6$.</li>
+            </ol>
+        </div>
+    </div>
+
+</div>
+
 </body>
-</html>     
+</html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chương Trình Toán Lớp 11 - Chi Tiết & Bài Tập</title>
+    <!-- Thư viện MathJax hỗ trợ công thức Toán LaTeX -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --tiffany-blue: #00B2A9;       /* Màu Xanh Tiffany chủ đạo */
+            --tiffany-light: #E6F7F6;      /* Xanh Tiffany nhạt làm nền box */
+            --tiffany-dark: #005F5A;       /* Xanh Tiffany đậm cho chữ tiêu đề */
+            --text-main: #2C3E50;          /* Màu chữ chính */
+            --bg-color: #F4F9F9;           /* Nền trang nhẹ nhàng */
+            --card-bg: #FFFFFF;            /* Nền thẻ trắng */
+            --red-exercise: #E74C3C;       /* Màu ĐỎ nổi bật cho Đề bài tập */
+            --purple-highlight: #6C5CE7;   /* Màu Tím nhẹ cho nhấn mạnh công thức */
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, var(--tiffany-blue), var(--tiffany-dark));
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 20px rgba(0, 178, 169, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .topic-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-top: 5px solid var(--tiffany-blue);
+        }
+
+        .topic-header {
+            color: var(--tiffany-dark);
+            font-size: 1.6rem;
+            border-bottom: 2px solid var(--tiffany-blue);
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .section-block {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--tiffany-dark);
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .section-title::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 18px;
+            background-color: var(--tiffany-blue);
+            margin-right: 10px;
+            border-radius: 3px;
+        }
+
+        .exercise-title {
+            color: var(--red-exercise) !important;
+        }
+
+        .exercise-title::before {
+            background-color: var(--red-exercise) !important;
+        }
+
+        .content-box {
+            background-color: var(--tiffany-light);
+            padding: 18px 22px;
+            border-radius: 10px;
+            border-left: 5px solid var(--tiffany-blue);
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+            margin: 5px 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .exercise-list li {
+            font-weight: 600;
+            color: #C0392B;
+            margin-bottom: 14px;
+        }
+
+        b {
+            color: var(--purple-highlight);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>TOÁN HỌC LỚP 11 - TỔNG HỢP KIẾN THỨC & BÀI TẬP</h1>
+        <p>Hệ thống Lý thuyết, Công thức Lượng giác, Dãy số & Xác suất chi tiết</p>
+    </header>
+
+    <!-- CHỦ ĐỀ 1: HÀM SỐ LƯỢNG GIÁC -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 1: HÀM SỐ LƯỢNG GIÁC</h2>
+
+        <div class="section-block">
+            <div class="section-title">I. Công thức Lượng giác cơ bản cần nhớ</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Công thức Hằng đẳng thức:</b> $\sin^2 x + \cos^2 x = 1; \quad 1 + \tan^2 x = \frac{1}{\cos^2 x}; \quad 1 + \cot^2 x = \frac{1}{\sin^2 x}$.</li>
+                    <li><b>Công thức Cộng:</b>
+                        <br>$\sin(a \pm b) = \sin a \cos b \pm \cos a \sin b$
+                        <br>$\cos(a \pm b) = \cos a \cos b \mp \sin a \sin b$
+                    </li>
+                    <li><b>Công thức Nhân đôi:</b>
+                        <br>$\sin 2x = 2\sin x \cos x$
+                        <br>$\cos 2x = \cos^2 x - \sin^2 x = 2\cos^2 x - 1 = 1 - 2\sin^2 x$
+                    </li>
+                    <li><b>Công thức Hạ bậc:</b> $\sin^2 x = \frac{1 - \cos 2x}{2}; \quad \cos^2 x = \frac{1 + \cos 2x}{2}$.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">II. Tính chất các Hàm số Lượng giác</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Hàm số $y = \sin x$:</b> TXĐ $D = \mathbb{R}$, Tập giá trị $[-1; 1]$, là hàm số <b>lẻ</b>, tuần hoàn với chu kỳ $T = 2\pi$.</li>
+                    <li><b>Hàm số $y = \cos x$:</b> TXĐ $D = \mathbb{R}$, Tập giá trị $[-1; 1]$, là hàm số <b>chẵn</b>, tuần hoàn với chu kỳ $T = 2\pi$.</li>
+                    <li><b>Hàm số $y = \tan x$:</b> TXĐ $D = \mathbb{R} \setminus \{\frac{\pi}{2} + k\pi, k \in \mathbb{Z}\}$, là hàm số <b>lẻ</b>, tuần hoàn với chu kỳ $T = \pi$.</li>
+                    <li><b>Hàm số $y = \cot x$:</b> TXĐ $D = \mathbb{R} \setminus \{k\pi, k \in \mathbb{Z}\}$, là hàm số <b>lẻ</b>, tuần hoàn với chu kỳ $T = \pi$.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title exercise-title">Bài tập vận dụng (Đề bài)</div>
+            <ol class="exercise-list">
+                <li>Tìm tập xác định của các hàm số sau:
+                    <br>a) $y = \frac{2}{\cos x - 1}$
+                    <br>b) $y = \tan\left(2x + \frac{\pi}{3}\right)$
+                    <br>c) $y = \sqrt{1 - \sin x}$
+                </li>
+                <li>Xét tính chẵn, lẻ của các hàm số sau:
+                    <br>a) $f(x) = x \cdot \cos 3x$
+                    <br>b) $g(x) = \sin^2 x + \cos x$
+                </li>
+                <li>Tìm giá trị lớn nhất ($y_{\max}$) và giá trị nhỏ nhất ($y_{\min}$) của các hàm số:
+                    <br>a) $y = 3\sin 2x - 5$
+                    <br>b) $y = 2\cos^2 x - 4\sin x + 1$
+                </li>
+            </ol>
+        </div>
+    </div>
+    <!-- CHỦ ĐỀ 2: PHƯƠNG TRÌNH LƯỢNG GIÁC -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 2: PHƯƠNG TRÌNH LƯỢNG GIÁC</h2>
+
+        <div class="section-block">
+            <div class="section-title">I. Phương trình Lượng giác cơ bản</div>
+            <div class="content-box">
+                <ul>
+                    <li>$\sin x = \sin \alpha \iff \left[\begin{array}{l} x = \alpha + k2\pi \\ x = \pi - \alpha + k2\pi \end{array}\right. \quad (k \in \mathbb{Z})$</li>
+                    <li>$\cos x = \cos \alpha \iff x = \pm \alpha + k2\pi \quad (k \in \mathbb{Z})$</li>
+                    <li>$\tan x = \tan \alpha \iff x = \alpha + k\pi \quad (k \in \mathbb{Z})$</li>
+                    <li>$\cot x = \cot \alpha \iff x = \alpha + k\pi \quad (k \in \mathbb{Z})$</li>
+                    <li><b>Trường hợp đặc biệt ($\sin x, \cos x$):</b>
+                        <br>$\sin x = 0 \iff x = k\pi; \quad \sin x = 1 \iff x = \frac{\pi}{2} + k2\pi; \quad \sin x = -1 \iff x = -\frac{\pi}{2} + k2\pi$.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">II. Các dạng Phương trình Thường gặp</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>1. Phương trình bậc hai đối với một hàm số lượng giác:</b> Đặt ẩn phụ $t = \sin x$ hoặc $t = \cos x$ (Điều kiện $|t| \le 1$).</li>
+                    <li><b>2. Phương trình bậc nhất đối với $\sin x$ và $\cos x$:</b> $a\sin x + b\cos x = c$.
+                        <br>Điều kiện có nghiệm: $a^2 + b^2 \ge c^2$.
+                        <br>Phương pháp: Chia cả hai vế cho $\sqrt{a^2 + b^2}$ để đưa về dạng $\sin(x + \alpha) = \frac{c}{\sqrt{a^2 + b^2}}$.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title exercise-title">Bài tập vận dụng (Đề bài)</div>
+            <ol class="exercise-list">
+                <li>Giải các phương trình lượng giác cơ bản:
+                    <br>a) $2\sin x - \sqrt{3} = 0$
+                    <br>b) $\cos\left(3x - \frac{\pi}{4}\right) = -\frac{1}{2}$
+                </li>
+                <li>Giải các phương trình biến đổi về bậc hai:
+                    <br>a) $2\cos^2 x - 3\cos x + 1 = 0$
+                    <br>b) $2\sin^2 x + \cos 2x - 1 = 0$
+                </li>
+                <li>Giải các phương trình dạng $a\sin x + b\cos x = c$:
+                    <br>a) $\sqrt{3}\sin x + \cos x = 2$
+                    <br>b) $\sin 2x - \sqrt{3}\cos 2x = \sqrt{2}$
+                </li>
+                <li>Tìm các nghiệm của phương trình $\sin\left(2x + \frac{\pi}{6}\right) = \frac{1}{2}$ trên khoảng $(0; 2\pi)$.</li>
+            </ol>
+        </div>
+        </div>
+
+    <!-- CHỦ ĐỀ 3: DÃY SỐ -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 3: DÃY SỐ</h2>
+
+        <div class="section-block">
+            <div class="section-title">I. Khái niệm & Cách cho Dãy số</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Định nghĩa:</b> Mỗi hàm số $u$ xác định trên tập số nguyên dương $\mathbb{N}^*$ được gọi là một dãy số vô hạn, ký hiệu $(u_n)$.</li>
+                    <li><b>Các cách cho dãy số:</b> Cho bằng công thức số hạng tổng quát $u_n$, cho bằng phương pháp mô tả, hoặc cho bằng công thức truy hồi.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">II. Tính chất của Dãy số</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Dãy số Tăng / Giảm:</b>
+                        <ul>
+                            <li>Dãy $(u_n)$ là <b>dãy tăng</b> $\iff u_{n+1} > u_n, \forall n \in \mathbb{N}^* \iff u_{n+1} - u_n > 0$.</li>
+                            <li>Dãy $(u_n)$ là <b>dãy giảm</b> $\iff u_{n+1} < u_n, \forall n \in \mathbb{N}^* \iff u_{n+1} - u_n < 0$.</li>
+                        </ul>
+                    </li>
+                    <li><b>Dãy số Bị chặn:</b> Dãy $(u_n)$ bị chặn nếu tồn tại hai số $m, M$ sao cho $m \le u_n \le M, \forall n \in \mathbb{N}^*$.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title exercise-title">Bài tập vận dụng (Đề bài)</div>
+            <ol class="exercise-list">
+                <li>Cho dãy số $(u_n)$ có số hạng tổng quát $u_n = \frac{2n - 1}{n + 1}$.
+                    <br>a) Viết 5 số hạng đầu tiên của dãy số.
+                    <br>b) Số $\frac{9}{7}$ là số hạng thứ mấy của dãy?
+                </li>
+                <li>Xét tính tăng, giảm của các dãy số sau:
+                    <br>a) $u_n = 3n - 2$
+                    <br>b) $u_n = \frac{1}{n^2 + 1}$
+                </li>
+                <li>Chứng minh rằng dãy số $u_n = \frac{3n + 1}{n + 2}$ là một dãy số bị chặn.</li>
+            </ol>
+        </div>
+    </div>
+    <!-- CHỦ ĐỀ 4: CẤP SỐ CỘNG -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 4: CẤP SỐ CỘNG</h2>
+
+        <div class="section-block">
+            <div class="section-title">I. Định nghĩa & Công thức Cấp số cộng (CSC)</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Định nghĩa:</b> $(u_n)$ là cấp số cộng $\iff u_{n+1} = u_n + d, \forall n \in \mathbb{N}^*$ ($d$ gọi là <b>công sai</b>).</li>
+                    <li><b>Số hạng tổng quát:</b> $u_n = u_1 + (n - 1)d \quad (n \ge 2)$.</li>
+                    <li><b>Tính chất các số hạng:</b> $u_k = \frac{u_{k-1} + u_{k+1}}{2} \quad (k \ge 2)$ (Mỗi số hạng trừ số hạng đầu và cuối đều là trung bình cộng của 2 số hạng kề nó).</li>
+                    <li><b>Tổng $n$ số hạng đầu tiên ($S_n$):</b>
+                        <br>$S_n = u_1 + u_2 + ... + u_n = \frac{n(u_1 + u_n)}{2} = \frac{n[2u_1 + (n - 1)d]}{2}$.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title exercise-title">Bài tập vận dụng (Đề bài)</div>
+            <ol class="exercise-list">
+                <li>Cho cấp số cộng $(u_n)$ có $u_1 = 2$ và công sai $d = 5$.
+                    <br>a) Tìm số hạng thứ 20 ($u_{20}$).
+                    <br>b) Tính tổng 30 số hạng đầu tiên ($S_{30}$).
+                </li>
+                <li>Xác định số hạng đầu $u_1$ và công sai $d$ của cấp số cộng $(u_n)$ biết:
+                    <br>$\begin{cases} u_1 + u_5 - u_3 = 10 \\ u_2 + u_6 = 26 \end{cases}$
+                </li>
+                <li>Tìm ba số hạng liên tiếp của một cấp số cộng biết tổng của chúng bằng $15$ và tổng bình phương của chúng bằng $83$.</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- CHỦ ĐỀ 5: CẤP SỐ NHÂN -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 5: CẤP SỐ NHÂN</h2>
+
+        <div class="section-block">
+            <div class="section-title">I. Định nghĩa & Công thức Cấp số nhân (CSN)</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Định nghĩa:</b> $(u_n)$ là cấp số nhân $\iff u_{n+1} = u_n \cdot q, \forall n \in \mathbb{N}^*$ ($q$ gọi là <b>công bội</b>).</li>
+                    <li><b>Số hạng tổng quát:</b> $u_n = u_1 \cdot q^{n-1} \quad (n \ge 2)$.</li>
+                    <li><b>Tính chất các số hạng:</b> $u_k^2 = u_{k-1} \cdot u_{k+1} \quad (k \ge 2)$.</li>
+                    <li><b>Tổng $n$ số hạng đầu tiên ($S_n$):</b>
+                        <br>$S_n = u_1 \frac{1 - q^n}{1 - q} \quad (q \neq 1)$.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section-block">
+            <div class="section-title exercise-title">Bài tập vận dụng (Đề bài)</div>
+            <ol class="exercise-list">
+                <li>Cho cấp số nhân $(u_n)$ có $u_1 = -2$ và công bội $q = 3$.
+                    <br>a) Tìm số hạng thứ 6 ($u_6$).
+                    <br>b) Số $-486$ là số hạng thứ bao nhiêu của dãy?
+                </li>
+                <li>Tìm số hạng đầu $u_1$ và công bội $q$ của cấp số nhân $(u_n)$ thỏa mãn:
+                    <br>$\begin{cases} u_4 - u_2 = 72 \\ u_5 - u_3 = 144 \end{cases}$
+                </li>
+                <li>Cho ba số $a, b, c$ theo thứ tự lập thành một cấp số nhân. Chứng minh rằng $(a + b + c)(a - b + c) = a^2 + b^2 + c^2$.</li>
+            </ol>
+        </div>
+    </div>
+    <!-- CHỦ ĐỀ 6: TỔ HỢP & XÁC SUẤT -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 6: XÁC SUẤT & TỔ HỢP</h2>
+
+        <div class="section-block">
+            <div class="section-title">I. Quy tắc đếm & Đại số tổ hợp</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Quy tắc Cộng:</b> Thực hiện công việc bởi 1 trong 2 phương án độc lập (Phương án A có $m$ cách, phương án B có $n$ cách) $\implies m + n$ cách.</li>
+                    <li><b>Quy tắc Nhân:</b> Thực hiện công việc qua các giai đoạn liên tiếp (Giai đoạn 1 có $m$ cách, giai đoạn 2 có $n$ cách) $\implies m \cdot n$ cách.</li>
+                    <li><b>Hoán vị:</b> Số cách sắp xếp $n$ phần tử khác nhau: $P_n = n! = 1 \cdot 2 \cdot 3 ... n$.</li>
+                    <li><b>Chỉnh hợp (Có thứ tự):</b> Chọn $k$ phần tử từ $n$ phần tử và xếp thứ tự: $A_n^k = \frac{n!}{(n-k)!}$.</li>
+                    <li><b>Tổ hợp (Không phân biệt thứ tự):</b> Chọn $k$ phần tử từ $n$ phần tử: $C_n^k = \frac{n!}{k!(n-k)!}$.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">II. Tính toán Xác suất</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Không gian mẫu ($\Omega$):</b> Tập hợp tất cả các kết quả có thể xảy ra của phép thử. So phần tử ký hiệu là $n(\Omega)$.</li>
+                    <li><b>Biến cố $A$:</b> Tập con của không gian mẫu. Số kết quả thuận lợi cho $A$ ký hiệu $n(A)$.</li>
+                    <li><b>Công thức tính Xác suất:</b> $P(A) = \frac{n(A)}{n(\Omega)} \quad (0 \le P(A) \le 1)$.</li>
+                    <li><b>Biến cố đối ($\bar{A}$):</b> $P(\bar{A}) = 1 - P(A)$.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title exercise-title">Bài tập vận dụng (Đề bài)</div>
+            <ol class="exercise-list">
+                <li>Từ các chữ số $0, 1, 2, 3, 4, 5, 6$ có thể lập được bao nhiêu số tự nhiên:
+                    <br>a) Gồm 4 chữ số khác nhau?
+                    <br>b) Gồm 4 chữ số khác nhau và là số chẵn?
+                </li>
+                <li>Một đội văn nghệ có 8 nam và 6 nữ. Chọn ngẫu nhiên một nhóm gồm 5 người.
+                    <br>a) Có bao nhiêu cách chọn nhóm có đúng 3 nam và 2 nữ?
+                    <br>b) Tính xác suất để chọn được nhóm có ít nhất 1 nữ.
+                </li>
+                <li>Một hộp chứa 6 viên bi màu đỏ và 4 viên bi màu xanh có kích thước giống nhau. Lấy ngẫu nhiên đồng thời 3 viên bi. Tính xác suất để:
+                    <br>a) Cả 3 viên bi lấy ra đều có màu đỏ.
+                    <br>b) Lấy được ít nhất 2 viên bi màu đỏ.
+                </li>
+            </ol>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chương Trình Toán Lớp 12 - Chi Tiết & Bài Tập Vận Dụng</title>
+    <!-- Thư viện MathJax hỗ trợ công thức Toán LaTeX -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --tiffany-blue: #00B2A9;       /* Màu Xanh Tiffany chủ đạo */
+            --tiffany-light: #E6F7F6;      /* Xanh Tiffany nhạt làm nền box */
+            --tiffany-dark: #005F5A;       /* Xanh Tiffany đậm cho chữ tiêu đề */
+            --text-main: #2C3E50;          /* Màu chữ chính */
+            --bg-color: #F4F9F9;           /* Nền trang nhẹ nhàng */
+            --card-bg: #FFFFFF;            /* Nền thẻ trắng */
+            --red-exercise: #E74C3C;       /* Màu ĐỎ nổi bật cho Đề bài tập */
+            --purple-highlight: #6C5CE7;   /* Màu Tím nhẹ cho nhấn mạnh công thức */
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, var(--tiffany-blue), var(--tiffany-dark));
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 20px rgba(0, 178, 169, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .topic-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-top: 5px solid var(--tiffany-blue);
+        }
+
+        .topic-header {
+            color: var(--tiffany-dark);
+            font-size: 1.6rem;
+            border-bottom: 2px solid var(--tiffany-blue);
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .section-block {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--tiffany-dark);
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .section-title::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 18px;
+            background-color: var(--tiffany-blue);
+            margin-right: 10px;
+            border-radius: 3px;
+        }
+
+        .exercise-title {
+            color: var(--red-exercise) !important;
+        }
+
+        .exercise-title::before {
+            background-color: var(--red-exercise) !important;
+        }
+
+        .content-box {
+            background-color: var(--tiffany-light);
+            padding: 18px 22px;
+            border-radius: 10px;
+            border-left: 5px solid var(--tiffany-blue);
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+            margin: 5px 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .exercise-list li {
+            font-weight: 600;
+            color: #C0392B;
+            margin-bottom: 14px;
+        }
+
+        b {
+            color: var(--purple-highlight);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>TOÁN HỌC LỚP 12 - TỔNG HỢP KIẾN THỨC CHUYÊN SÂU</h1>
+        <p>Chi Tiết Lý Thuyết, Dạng Toán Trọng Tâm & Bài Tập Ôn Thi THPT Quốc Gia</p>
+    </header>
+
+    <!-- CHỦ ĐỀ 1: ỨNG DỤNG ĐẠO HÀM ĐỂ KHẢO SÁT VÀ VẼ ĐỒ THỊ HÀM SỐ -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 1: ỨNG DỤNG ĐẠO HÀM ĐỂ KHẢO SÁT HÀM SỐ</h2>
+
+        <div class="section-block">
+            <div class="section-title">I. Tính Đơn Điệu Của Hàm Số (Đồng biến / Nghịch biến)</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Điều kiện cần và đủ:</b> Cho hàm số $y = f(x)$ có đạo hàm trên $K$:
+                        <ul>
+                            <li>Nếu $f'(x) \ge 0, \forall x \in K$ (dấu "=" xảy ra tại hữu hạn điểm) $\implies$ Hàm số <b>đồng biến</b> trên $K$.</li>
+                            <li>Nếu $f'(x) \le 0, \forall x \in K$ (dấu "=" xảy ra tại hữu hạn điểm) $\implies$ Hàm số <b>nghịch biến</b> trên $K$.</li>
+                        </ul>
+                    </li>
+                    <li><b>Các bước xét đơn điệu:</b> 1. Tìm TXĐ $D \to$ 2. Tính $y' \to$ 3. Tìm nghiệm của $y' = 0$ hoặc nơi $y'$ không xác định $\to$ 4. Lập bảng biến thiên (BBT) $\to$ 5. Kết luận.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">II. Cực Trị Của Hàm Số</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Quy tắc 1 (Dấu của $y'$ đổi chiều):</b>
+                        <br>- Nếu $y'$ đổi dấu từ <b>$+$ sang $-$</b> khi qua $x_0 \implies x_0$ là điểm <b>cực đại (CĐ)</b>.
+                        <br>- Nếu $y'$ đổi dấu từ <b>$-$ sang $+$</b> khi qua $x_0 \implies x_0$ là điểm <b>cực tiểu (CT)</b>.
+                    </li>
+                    <li><b>Quy tắc 2 (Dùng Đạo hàm cấp hai $y''$):</b>
+                        <br>- Cho $f'(x_0) = 0$. Nếu $f''(x_0) < 0 \implies x_0$ là điểm cực đại.
+                        <br>- Cho $f'(x_0) = 0$. Nếu $f''(x_0) > 0 \implies x_0$ là điểm cực tiểu.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">III. Giá Trị Lớn Nhất (GTLN) & Nhỏ Nhất (GTNN) trên Đoạn $[a; b]$</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Phương pháp tính nhanh trên đoạn $[a; b]$:</b>
+                        <br>1. Tính $f'(x)$ và tìm các nghiệm $x_1, x_2,... \in (a; b)$ của $f'(x) = 0$.
+                        <br>2. Tính các giá trị: $f(a), f(b), f(x_1), f(x_2),...$
+                        <br>3. Kết luận: Giá trị lớn nhất trong các số trên là $\max_{[a;b]} f(x)$, giá trị nhỏ nhất là $\min_{[a;b]} f(x)$.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">IV. Đường Tiệm Cận Của Đồ Thị Hàm Số</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Tiệm cận đứng (TCĐ):</b> Đường thẳng $x = x_0$ là TCĐ nếu $\lim_{x \to x_0^+} y = \pm\infty$ hoặc $\lim_{x \to x_0^-} y = \pm\infty$ (Thường là nghiệm của mẫu làm tử khác 0).</li>
+                    <li><b>Tiệm cận ngang (TCN):</b> Đường thẳng $y = y_0$ là TCN nếu $\lim_{x \to +\infty} y = y_0$ hoặc $\lim_{x \to -\infty} y = y_0$.</li>
+                    <li><b>Tiệm cận xiên (TCX - Chương trình mới):</b> Đường thẳng $y = ax + b \quad (a \neq 0)$ nếu $\lim_{x \to \pm\infty} [y - (ax + b)] = 0$.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title exercise-title">Bài tập vận dụng (Đề bài)</div>
+            <ol class="exercise-list">
+                <li>Tìm các khoảng đồng biến, nghịch biến của hàm số $y = x^3 - 3x^2 - 9x + 5$.</li>
+                <li>Tìm tất cả giá trị của tham số $m$ để hàm số $y = \frac{1}{3}x^3 - mx^2 + (m+2)x - 1$ đồng biến trên $\mathbb{R}$.</li>
+                <li>Tìm tọa độ các điểm cực trị của đồ thị hàm số $y = x^4 - 2x^2 + 3$.</li>
+                <li>Tìm giá trị lớn nhất và giá trị nhỏ nhất của hàm số $f(x) = x + \frac{4}{x}$ trên đoạn $[1; 3]$.</li>
+                <li>Xác định các đường tiệm cận (đứng, ngang, xiên) của đồ thị các hàm số sau:
+                    <br>a) $y = \frac{2x - 1}{x + 1}$
+                    <br>b) $y = \frac{x^2 - 3x + 2}{x - 1}$
+                </li>
+            </ol>
+        </div>
+    </div>
+    <!-- CHỦ ĐỀ 2: HÀM SỐ LŨY THỪA, MŨ VÀ LOGARIT -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 2: HÀM SỐ LŨY THỪA, MŨ VÀ LOGARIT</h2>
+
+        <div class="section-block">
+            <div class="section-title">I. Công thức Biến đổi Logarit Cần Thuộc Lòng</div>
+            <div class="content-box">
+                Cho $0 < a \neq 1$ và $b, c > 0$:
+                <ul>
+                    <li>$\log_a 1 = 0; \quad \log_a a = 1; \quad \log_a(a^b) = b; \quad a^{\log_a b} = b$.</li>
+                    <li><b>Tích & Thương:</b> $\log_a(bc) = \log_a b + \log_a c; \quad \log_a\left(\frac{b}{c}\right) = \log_a b - \log_a c$.</li>
+                    <li><b>Số mũ:</b> $\log_a(b^\alpha) = \alpha \log_a b; \quad \log_{a^\beta} b = \frac{1}{\beta} \log_a b$.</li>
+                    <li><b>Đổi cơ số:</b> $\log_a b = \frac{\log_c b}{\log_c a} \implies \log_a b = \frac{1}{\log_b a}$.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">II. Đạo Hàm & Biến Thiên Của Hàm Mũ - Logarit</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Hàm Mũ $y = a^x \quad (a > 0, a \neq 0)$:</b>
+                        <br>- Đạo hàm: $(a^x)' = a^x \ln a; \quad (e^x)' = e^x; \quad (a^u)' = u' \cdot a^u \ln a$.
+                        <br>- Biến thiên: ĐT luôn đi qua $(0; 1)$. Nếu $a > 1$ hàm số đồng biến; Nếu $0 < a < 1$ hàm số nghịch biến.
+                    </li>
+                    <li><b>Hàm Logarit $y = \log_a x \quad (x > 0)$:</b>
+                        <br>- Đạo hàm: $(\log_a x)' = \frac{1}{x \ln a}; \quad (\ln x)' = \frac{1}{x}; \quad (\log_a u)' = \frac{u'}{u \ln a}$.
+                        <br>- Biến thiên: ĐT luôn đi qua $(1; 0)$. Nếu $a > 1$ đồng biến; Nếu $0 < a < 1$ nghịch biến.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">III. Phương Trình, Bất Phương Trình Mũ & Logarit</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Phương trình cơ bản:</b>
+                        <br>$a^x = b \iff x = \log_a b \quad (b > 0)$.
+                        <br>$\log_a x = b \iff x = a^b$.
+                    </li>
+                    <li><b>Bất phương trình (Lưu ý chiều BPT):</b>
+                        <br>- Nếu $a > 1$: $a^{f(x)} > a^{g(x)} \iff f(x) > g(x)$ (Giữ nguyên chiều).
+                        <br>- Nếu $0 < a < 1$: $a^{f(x)} > a^{g(x)} \iff f(x) < g(x)$ (Đảo chiều BPT).
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title exercise-title">Bài tập vận dụng (Đề bài)</div>
+            <ol class="exercise-list">
+                <li>Rút gọn biểu thức $P = \frac{a^{\frac{4}{3}} \cdot \sqrt{a}}{a^{\frac{1}{6}}}$ (với $a > 0$).</li>
+                <li>Tính đạo hàm của các hàm số sau:
+                    <br>a) $y = e^{2x^2 - 3x}$
+                    <br>b) $y = \ln(x^2 + 1)$
+                    <br>c) $y = \log_3(2x + 1)$
+                </li>
+                <li>Giải các phương trình mũ và logarit sau:
+                    <br>a) $2^{2x - 1} = \frac{1}{8}$
+                    <br>b) $9^x - 4 \cdot 3^x + 3 = 0$
+                    <br>c) $\log_2(x - 1) + \log_2(x + 1) = 3$
+                </li>
+                <li>Giải bất phương trình: $\log_{\frac{1}{2}}(2x - 3) \ge -1$.</li>
+            </ol>
+        </div>
+    </div>
+    <!-- CHỦ ĐỀ 3: NGUYÊN HÀM - TÍCH PHÂN VÀ ỨNG DỤNG -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 3: NGUYÊN HÀM - TÍCH PHÂN & ỨNG DỤNG</h2>
+
+        <div class="section-block">
+            <div class="section-title">I. Bảng Nguyên Hàm Cơ Bản Cần Nắm</div>
+            <div class="content-box">
+                <ul>
+                    <li>$\int k \, dx = kx + C; \quad \int x^n \, dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1)$.</li>
+                    <li>$\int \frac{1}{x} \, dx = \ln|x| + C; \quad \int e^x \, dx = e^x + C; \quad \int a^x \, dx = \frac{a^x}{\ln a} + C$.</li>
+                    <li>$\int \cos x \, dx = \sin x + C; \quad \int \sin x \, dx = -\cos x + C$.</li>
+                    <li>$\int \frac{1}{\cos^2 x} \, dx = \tan x + C; \quad \int \frac{1}{\sin^2 x} \, dx = -\cot x + C$.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">II. Hai Phương Pháp Tính Tích Phân Quan Trọng</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>1. Phương pháp Đổi biến số:</b> Đặt $t = u(x) \implies dt = u'(x)dx$.
+                        <br><i>Lưu ý:</i> Tính tích phân bắt buộc phải <b>Đổi Bán Cận</b> sau khi đặt $t$.
+                    </li>
+                    <li><b>2. Phương pháp Tích phân Từng phần:</b> $\int u \, dv = uv - \int v \, du$.
+                        <br>Thứ tự ưu tiên chọn $u$: <b>"Nhất lô, nhị đa, tam lượng, tứ mũ"</b> (Logarit $\to$ Đa thức $\to$ Lượng giác $\to$ Mũ).
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">III. Ứng Dụng Tích Phân Tính Diện Tích & Thể Tích</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Diện tích hình phẳng $(H)$</b> giới hạn bởi $y = f(x)$, trục $Ox$ và 2 đường $x = a, x = b$:
+                        <br>$$S = \int_a^b |f(x)| \, dx$$
+                    </li>
+                    <li><b>Thể tích khối tròn xoay $(V)$</b> quay hình $(H)$ xung quanh trục $Ox$:
+                        <br>$$V = \pi \int_a^b [f(x)]^2 \, dx$$
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title exercise-title">Bài tập vận dụng (Đề bài)</div>
+            <ol class="exercise-list">
+                <li>Tìm họ nguyên hàm $F(x) = \int (3x^2 - 2\sin x + e^x) \, dx$.</li>
+                <li>Tính các tích phân sau bằng phương pháp đổi biến số:
+                    <br>a) $I = \int_0^1 2x(x^2 + 1)^3 \, dx$
+                    <br>b) $J = \int_1^e \frac{\ln x}{x} \, dx$
+                </li>
+                <li>Tính tích phân từng phần: $K = \int_0^{\pi} x \cdot \cos x \, dx$.</li>
+                <li>Tính diện tích hình phẳng giới hạn bởi đồ thị $y = x^2 - 2x$ và đường thẳng $y = x$.</li>
+                <li>Tính thể tích khối tròn xoay xoay quanh trục $Ox$ tạo bởi hình phẳng giới hạn bởi $y = \sqrt{x}$, $y = 0$ và $x = 4$.</li>
+            </ol>
+        </div>
+    </div>
+    <!-- CHỦ ĐỀ 4: TỌA ĐỘ TRONG KHÔNG GIAN OXYZ -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 4: PHƯƠNG PHÁP TỌA ĐỘ TRONG KHÔNG GIAN OXYZ</h2>
+
+        <div class="section-block">
+            <div class="section-title">I. Tọa độ Véctơ & Tích Có Hướng</div>
+            <div class="content-box">
+                Cho $\vec{a} = (a_1; a_2; a_3)$ và $\vec{b} = (b_1; b_2; b_3)$:
+                <ul>
+                    <li><b>Tích vô hướng:</b> $\vec{a} \cdot \vec{b} = a_1 b_1 + a_2 b_2 + a_3 b_3$.</li>
+                    <li><b>Tích có hướng $[\vec{a}, \vec{b}]$:</b> Tạo ra véctơ thứ 3 vuông góc với cả $\vec{a}$ và $\vec{b}$.
+                        <br>$$[\vec{a}, \vec{b}] = \left( \begin{vmatrix} a_2 & a_3 \\ b_2 & b_3 \end{vmatrix}; \begin{vmatrix} a_3 & a_1 \\ b_3 & b_1 \end{vmatrix}; \begin{vmatrix} a_1 & a_2 \\ b_1 & b_2 \end{vmatrix} \right)$$
+                    </li>
+                    <li>Ứng dụng tích có hướng: Tính diện tích tam giác $S_{ABC} = \frac{1}{2}|[\vec{AB}, \vec{AC}]|$, Thể tích tứ diện $V_{ABCD} = \frac{1}{6}|[\vec{AB}, \vec{AC}] \cdot \vec{AD}|$.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">II. Phương Trình Mặt Phẳng & Đường Thẳng</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Mặt phẳng $(\alpha)$:</b> Qua $M_0(x_0; y_0; z_0)$ nhận $\vec{n} = (A; B; C)$ làm VTPT:
+                        <br>$$A(x - x_0) + B(y - y_0) + C(z - z_0) = 0 \iff Ax + By + Cz + D = 0$$
+                    </li>
+                    <li><b>Đường thẳng $d$:</b> Qua $M_0(x_0; y_0; z_0)$ nhận $\vec{u} = (a; b; c)$ làm VTCP:
+                        <br>- PT Chính tắc: $\frac{x - x_0}{a} = \frac{y - y_0}{b} = \frac{z - z_0}{c} \quad (a,b,c \neq 0)$.
+                        <br>- PT Tham số: $\begin{cases} x = x_0 + at \\ y = y_0 + bt \\ z = z_0 + ct \end{cases} (t \in \mathbb{R})$.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title">III. Phương Trình Mặt Cầu</div>
+            <div class="content-box">
+                <ul>
+                    <li><b>Dạng chính chính:</b> Mặt cầu tâm $I(a; b; c)$, bán kính $R$:
+                        <br>$$(x - a)^2 + (y - b)^2 + (z - c)^2 = R^2$$
+                    </li>
+                    <li><b>Dạng tổng quát:</b> $x^2 + y^2 + z^2 - 2ax - 2by - 2cz + d = 0$ với điều kiện $a^2 + b^2 + c^2 - d > 0 \implies R = \sqrt{a^2 + b^2 + c^2 - d}$.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <div class="section-title exercise-title">Bài tập vận dụng (Đề bài)</div>
+            <ol class="exercise-list">
+                <li>Trong không gian $Oxyz$, cho 3 điểm $A(1; 0; 2), B(2; -1; 3), C(0; 2; 1)$.
+                    <br>a) Tính diện tích tam giác $ABC$.
+                    <br>b) Viết phương trình mặt phẳng $(ABC)$.
+                </li>
+                <li>Viết phương trình mặt phẳng $(\alpha)$ đi qua $M(1; 2; -3)$ và song song với mặt phẳng $(P): 2x - y + 3z - 1 = 0$.</li>
+                <li>Viết phương trình tham số của đường thẳng $d$ đi qua $A(2; -1; 1)$ và vuông góc với mặt phẳng $(Q): x + 2y - z + 5 = 0$.</li>
+                <li>Viết phương trình mặt cầu $(S)$ có đường kính $AB$ với $A(2; 1; 1)$ và $B(0; 3; -1)$.</li>
+                <li>Tính khoảng cách từ điểm $M(1; 3; -2)$ đến mặt phẳng $(P): 2x - 2y + z - 3 = 0$.</li>
+            </ol>
+        </div>
+    </div>
