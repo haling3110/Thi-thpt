@@ -3,226 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ôn Thi Môn Lịch Sử THPT 2027</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ôn Thi Tốt Nghiệp THPT - Môn Lịch Sử 12</title>
+    <style>
+        :root {
+            --tiffany-blue: #00B2A9;       /* Màu Xanh Tiffany chủ đạo */
+            --tiffany-light: #E6F7F6;      /* Xanh Tiffany nhạt làm nền box */
+            --tiffany-dark: #005F5A;       /* Xanh Tiffany đậm cho chữ tiêu đề */
+            --text-main: #2C3E50;          /* Màu chữ chính */
+            --bg-color: #F4F9F9;           /* Nền trang nhẹ nhàng */
+            --card-bg: #FFFFFF;            /* Nền thẻ trắng */
+            --red-exercise: #E74C3C;       /* Màu ĐỎ nổi bật cho Đề bài tập */
+            --purple-highlight: #6C5CE7;   /* Màu Tím cho nhấn mạnh đáp án/từ khóa */
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, var(--tiffany-blue), var(--tiffany-dark));
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 20px rgba(0, 178, 169, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .topic-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-top: 5px solid var(--tiffany-blue);
+        }
+
+        .topic-header {
+            color: var(--tiffany-dark);
+            font-size: 1.6rem;
+            border-bottom: 2px solid var(--tiffany-blue);
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .qa-block {
+            margin-bottom: 25px;
+            background-color: #FAFAFA;
+            border: 1px solid #E2E8F0;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .question-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--red-exercise);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .question-title::before {
+            content: "❓";
+            margin-right: 10px;
+        }
+
+        .answer-box {
+            background-color: var(--tiffany-light);
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 5px solid var(--tiffany-blue);
+        }
+
+        .answer-title {
+            font-weight: 700;
+            color: var(--tiffany-dark);
+            margin-bottom: 8px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 5px 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        b {
+            color: var(--purple-highlight);
+        }
+
+        .keyword {
+            background-color: #FFEAA7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #D63031;
+        }
+    </style>
 </head>
 <body>
 
+<div class="container">
     <header>
-        <div class="header-top">
-            <h1>📜 ÔN THI MÔN LỊCH SỬ 2027</h1>
-            <button id="theme-toggle" class="btn-toggle" onclick="toggleTheme()">🌙 Chế độ tối</button>
-        </div>
-        <p>Phân tích chuyên sâu Lịch sử Việt Nam (1930 - 1975), Đổi mới & Quan hệ quốc tế</p>
+        <h1>LỊCH SỬ LỚP 12 - TỔNG HỢP CÂU HỎI TRỌNG TÂM THI THPT</h1>
+        <p>Phân Tích Cốt Lõi, Bài Tập So Sánh & Từ Khóa Ăn Điểm Khống Chế Đề Thi</p>
     </header>
 
-    <div class="top-bar">
-        <a href="index.html" class="back-btn">⬅️ Quay lại Trang chủ</a>
-        <input type="text" id="search-input" placeholder="🔍 Tìm sự kiện lịch sử..." onkeyup="searchTopic()">
+    <!-- CHỦ ĐỀ 1: LỊCH SỬ THẾ GIỚI (1945 - 2000) -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 1: LỊCH SỬ THẾ GIỚI HIỆN ĐẠI (1945 - 2000)</h2>
+
+        <div class="qa-block">
+            <div class="question-title">Câu 1: Đặc điểm nổi bật nhất của quan hệ quốc tế sau Chiến tranh thế giới thứ hai (1945 - 1991) là gì? Dấu hiệu kết thúc Chiến tranh Lạnh?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Lời giải & Từ khóa trọng tâm:</div>
+                <ul>
+                    <li><b>Đặc điểm nổi bật nhất:</b> Thế giới bị chia thành hai phe (Tư bản chủ nghĩa & Xã hội chủ nghĩa) do hai siêu cường <span class="keyword">Mĩ và Liên Xô</span> đứng đầu (Trật tự 2 cực I-an-ta).</li>
+                    <li><b>Nguyên nhân khởi đầu Chiến tranh Lạnh:</b> Do sự đối lập về <span class="keyword">mục tiêu và chiến lược</span> giữa Mĩ và Liên Xô.</li>
+                    <li><b>Sự kiện chấm dứt Chiến tranh Lạnh:</b> Tháng 12/1989, tại đảo Manta, hai lãnh đạo Gorbachov (Liên Xô) và Bush (Mĩ) cùng tuyên bố <span class="keyword">chấm dứt Chiến tranh Lạnh</span>.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-title">Câu 2: Nguyên nhân quyết định sự phát triển thần kỳ của kinh tế Nhật Bản và Mĩ sau CTTG II là gì? Nguyên nhân nào chung cho cả Mĩ, Nhật, Tây Âu?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Lời giải & Từ khóa trọng tâm:</div>
+                <ul>
+                    <li><b>Yếu tố quyết định của Nhật Bản:</b> Yếu tố <span class="keyword">con người</span> được coi là vốn quý nhất, là nhân tố quyết định hàng đầu.</li>
+                    <li><b>Nguyên nhân chung cho cả Mĩ, Tây Âu, Nhật Bản:</b> Áp dụng thành tựu của <span class="keyword">khoa học - kỹ thuật</span> hiện đại vào sản xuất.</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <div class="math-container">
+    <!-- CHỦ ĐỀ 2: LỊCH SỬ VIỆT NAM (1919 - 1945) -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 2: VIỆT NAM TỪ 1919 ĐẾN CÁCH MẠNG THÁNG TÁM 1945</h2>
 
-        <!-- CHƯƠNG 1 -->
-        <section class="grade-section">
-            <h2 class="grade-title">📌 I. TRỌNG TÂM: CÁCH MẠNG THÁNG TÁM NĂM 1945</h2>
-
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>1. Hoàn cảnh lịch sử (Thời cơ ngàn năm có một)</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Hoàn cảnh thế giới (Khách quan):</strong> Chủ nghĩa phát xít bị tiêu diệt. Ngày 15/8/1945, Nhật tuyên bố hàng hàng không điều kiện ➔ Quân Nhật ở Đông Dương hoang mang, mất sức chiến đấu.</p>
-                    <p><strong>Hoàn cảnh trong nước (Chủ quan):</strong> Đảng và quần chúng nhân dân đã chuẩn bị sẵn sàng suốt 15 năm (qua 3 cao trào 1930-1931, 1936-1939, 1939-1945).</p>
-                    <p><strong>Khái niệm "Thời cơ vàng":</strong> Xuất hiện từ khi Nhật hàng Đồng minh (15/8/1945) đến trước khi quân Đồng minh vào Đông Dương giải giáp quân Nhật (đầu tháng 9/1945).</p>
-                    <div class="exercise-box">
-                        🎯 <strong>BẪY THI THPT:</strong> Đề hỏi <em>"Tác động quyết định nhất đến thắng lợi Cách mạng Tháng Tám?"</em> ➔ Trả lời: **Sự chuẩn bị chủ quan của Đảng và nhân dân** (Khách quan chỉ là điều kiện thuận lợi, chủ quan mới quyết định).
-                    </div>
-                </div>
+        <div class="qa-block">
+            <div class="question-title">Câu 3: So sánh Cương lĩnh chính trị đầu tiên (2/1930) và Luận cương chính trị (10/1930) của Đảng?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Lời giải & Từ khóa trọng tâm:</div>
+                <ul>
+                    <li><b>Điểm giống nhau:</b> Đều xác định phương hướng chiến lược là làm <span class="keyword">Cách mạng tư sản dân quyền</span> rồi tiến thẳng lên Chủ nghĩa xã hội.</li>
+                    <li><b>Hạn chế của Luận cương (10/1930):</b>
+                        <br>- Không đưa nhiệm vụ <span class="keyword">giải phóng dân tộc</span> lên hàng đầu (nặng về chống phong kiến/chia ruộng đất).
+                        <br>- Không đánh giá đúng khả năng cách mạng của tầng lớp <span class="keyword">tiểu tư sản, tư sản dân tộc, trung và tiểu địa chủ</span>.
+                    </li>
+                </ul>
             </div>
+        </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>2. Diễn biến khởi nghĩa giành chính quyền</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p>Lực lượng khởi nghĩa từ chỗ bẻ gãy từng bộ phận tiến lên giành chính quyền trên toàn quốc theo <strong>mốc thời gian và địa bàn trọng điểm</strong>:</p>
-                    <ul>
-                        <li><strong>19/8/1945:</strong> Giành chính quyền ở <strong>Hà Nội</strong> (Tạo sức ép bùng nổ cả nước).</li>
-                        <li><strong>23/8/1945:</strong> Giành chính quyền ở <strong>Huế</strong> (Trung tâm phong kiến).</li>
-                        <li><strong>25/8/1945:</strong> Giành chính quyền ở <strong>Sài Gòn</strong> (Trung tâm kinh tế miền Nam).</li>
-                        <li><strong>28/8/1945:</strong> Hà Tiên và Đồng Nai Thượng là 2 tỉnh cuối cùng giành chính quyền.</li>
-                        <li><strong>30/8/1945:</strong> Vua Bảo Đại băng hà, nộp ấn kiếm ➔ Xóa bỏ hoàn toàn chế độ phong kiến.</li>
-                        <li><strong>02/9/1945:</strong> Bác Hồ đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình ➔ Nước VNDCCH ra đời.</li>
-                    </ul>
-                </div>
+        <div class="qa-block">
+            <div class="question-title">Câu 4: Sự kiện nào đánh dấu bước ngoặt quyết định / chấm dứt khủng hoảng về đường lối cứu nước của dân tộc Việt Nam?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Lời giải & Từ khóa trọng tâm:</div>
+                <ul>
+                    <li><b>Đó là sự kiện:</b> Sự thành lập <span class="keyword">Đảng Cộng sản Việt Nam (2/1930)</span>.</li>
+                    <li><b>Ý nghĩa:</b> Chấm dứt thời kỳ khủng hoảng sâu sắc về đường lối và giai cấp lãnh đạo cách mạng Việt Nam; từ đây CMVN thuộc quyền lãnh đạo duy nhất của giai cấp công nhân.</li>
+                </ul>
             </div>
+        </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>3. Ý nghĩa lịch sử & Bài học kinh nghiệm</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Ý nghĩa trong nước:</strong> Mở ra kỷ nguyên mới - Kỷ nguyên độc lập, tự do và nhân dân làm chủ vận mệnh.</p>
-                    <p><strong>Ý nghĩa quốc tế:</strong> Chọc thủng khâu yếu nhất của hệ thống thuộc địa chủ nghĩa đế quốc, cổ vũ phong trào giải phóng dân tộc trên thế giới.</p>
-                    <p><strong>Bài học kinh nghiệm thi hay hỏi:</strong></p>
-                    <ul>
-                        <li>Dựng khối đại đoàn kết toàn dân (Mặt trận Việt Minh).</li>
-                        <li>Chủ động chớp thời cơ và kết hợp đấu tranh chính trị với vũ trang.</li>
-                    </ul>
-                </div>
+        <div class="qa-block">
+            <div class="question-title">Câu 5: Nguyên nhân quan trọng nhất dẫn đến thắng lợi của Cách mạng tháng Tám năm 1945 là gì? Bài học kinh nghiệm lớn nhất?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Lời giải & Từ khóa trọng tâm:</div>
+                <ul>
+                    <li><b>Nguyên nhân quyết định nhất (Chủ quan):</b> Sự <span class="keyword">lãnh đạo đúng đắn, sáng tạo của Đảng</span> đứng đầu là Chủ tịch Hồ Chí Minh.</li>
+                    <li><b>Thời cơ lịch sử (Khách quan):</b> Phát xít Nhật đầu hàng Đồng minh (Tháng 8/1945) - thời cơ <span class="keyword">"ngàn năm có một"</span>.</li>
+                    <li><b>Bài học kinh nghiệm nổi bật:</b> Giữ vững sự lãnh đạo của Đảng; <span class="keyword">kết hợp sức mạnh dân tộc với sức mạnh thời đại</span>; chớp thời cơ hành động.</li>
+                </ul>
             </div>
-        </section>
-        <!-- CHƯƠNG 2 -->
-        <section class="grade-section">
-            <h2 class="grade-title">📌 II. CÁC GIAI ĐOẠN LỊCH SỬ VN TRỌNG TÂM (1930 - 1975)</h2>
+        </div>
+    </div>
+    <!-- CHỦ ĐỀ 3: VIỆT NAM TỪ 1945 ĐẾN 1975 (HAI CUỘC KHÁNG CHIẾN) -->
+    <div class="topic-card">
+        <h2 class="topic-header">CHỦ ĐỀ 3: VIỆT NAM TỪ 1945 ĐẾN 1975 (CHỐNG PHÁP & MĨ)</h2>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>1. Phong trào cách mạng (1930 - 1945)</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <ul>
-                        <li><strong>1930 - 1931:</strong> Đỉnh cao Xô Viết Nghệ Tĩnh ➔ Cuộc tập dượt đầu tiên cho Cách mạng Tháng Tám.</li>
-                        <li><strong>1936 - 1939:</strong> Đòi dân sinh, dân chủ, hòa bình, cơm áo ➔ Cuộc tập dượt thứ hai.</li>
-                        <li><strong>1939 - 1945:</strong> Đặt nhiệm vụ Giải phóng dân tộc lên hàng đầu ➔ Cuộc tập dượt trực tiếp chuẩn bị cho Tám/1945.</li>
-                    </ul>
-                </div>
+        <div class="qa-block">
+            <div class="question-title">Câu 6: So sánh tính chất, quy mô và kết quả của các Chiến dịch quân sự lớn thời chống Pháp (1947, 1950, 1954)?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Lời giải & Từ khóa trọng tâm:</div>
+                <ul>
+                    <li><b>Việt Bắc Thu - Đông (1947):</b> Chiến dịch <span class="keyword">phản công</span> đầu tiên. Kết quả: Làm thất bại hoàn toàn chiến lược "đánh nhanh thắng nhanh" của Pháp.</li>
+                    <li><b>Biên giới Thu - Đông (1950):</b> Chiến dịch <span class="keyword">tiến công</span> lớn đầu tiên. Kết quả: Giành thế chủ động trên chiến trường chính Bắc Bộ.</li>
+                    <li><b>Điện Biên Phủ (1954):</b> Trận <span class="keyword">quyết chiến chiến lược</span>. Kết quả: Đập tan kế hoạch Na-va, đè bẹp ý chí xâm lược của Pháp, quyết định việc ký Hiệp định Giơ-ne-vơ.</li>
+                </ul>
             </div>
+        </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>2. Kháng chiến chống Pháp (1945 - 1954)</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p>Mục tiêu: Bảo vệ độc lập vừa giành được.</p>
-                    <ul>
-                        <li><strong>Việt Bắc Thu - Đông (1947):</strong> Đánh bại chiến thuật "Mảnh đánh nhanh thắng nhanh" của Pháp ➔ Đưa Pháp vào thế đánh lâu dài.</li>
-                        <li><strong>Biên Giới Thu - Đông (1950):</strong> Ta chủ động tiến công, giành thế chủ động trên chiến trường chính Bắc Bộ.</li>
-                        <li><strong>Đông Xuân 1953 - 1954 & Điện Biên Phủ (1954):</strong> Đập tan Kế hoạch Nava ➔ Lập lại hòa bình ở Đông Dương (Hiệp định Giơ-ne-vơ).</li>
-                    </ul>
-                </div>
+        <div class="qa-block">
+            <div class="question-title">Câu 7: So sánh các chiến lược chiến tranh của Mĩ ở miền Nam Việt Nam (1961 - 1973)?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Lời giải & Từ khóa trọng tâm:</div>
+                <ul>
+                    <li><b>Chiến tranh đặc biệt (1961 - 1965):</b> Công thức = <span class="keyword">Quân đội Sài Gòn + Cố vấn Mĩ</span> + Xương sống là "Ấp chiến lược".</li>
+                    <li><b>Cục bộ (1965 - 1968):</b> Công thức = <span class="keyword">Quân Mĩ (giữ vai trò chủ yếu)</span> + Quân đồng minh + Quân Sài Gòn. Chiến thuật: "Tìm diệt" & "Bình định".</li>
+                    <li><b>Việt Nam hóa chiến tranh (1969 - 1973):</b> Công thức = <span class="keyword">Quân đội Sài Gòn là chủ yếu</span> + Hỏa lực/Không quân Mĩ. Mở rộng chiến tranh ra toàn Đông Dương ("Dùng người Việt đánh người Việt").</li>
+                </ul>
             </div>
+        </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>3. Kháng chiến chống Mỹ (1954 - 1975)</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p>Đặc điểm lớn nhất: Đất nước bị chia cắt làm 2 miền với 2 chiến lược cách mạng khác nhau (Miền Bắc: Xây dựng CNXH; Miền Nam: Đấu tranh giải phóng).</p>
-                    <ul>
-                        <li>Đánh bại <strong>Đơn phương (1954-1960)</strong> ➔ Phong trào "Đồng Khởi" (1960).</li>
-                        <li>Đánh bại <strong>Đặc biệt (1961-1965)</strong> ➔ Ấp Bắc, Bình Giã, Đồng Xoài.</li>
-                        <li>Đánh bại <strong>Cục bộ (1965-1968)</strong> ➔ Vạn Tường, Mậu Thân 1968 (Buộc Mỹ ngừng leo thang, ngồi vào đàm phán).</li>
-                        <li>Đánh bại <strong>Việt Nam hóa chiến tranh (1969-1973)</strong> ➔ "Điện Biên Phủ trên không" 1972 ➔ Buộc Mỹ ký **Hiệp định Pari (1973)** rút quân về nước.</li>
-                        <li><strong>Tổng tiến công Xuân 1975:</strong> Chiến dịch Tây Nguyên ➔ Huế - Đà Nẵng ➔ **Chiến dịch Hồ Chí Minh** ➔ Giải phóng hoàn toàn miền Nam (30/4/1975).</li>
-                    </ul>
-                </div>
+        <div class="qa-block">
+            <div class="question-title">Câu 8: Sự kiện nào buộc Mĩ phải tuyên bố "Mĩ hóa" trở lại và công nhận sự thất bại của chiến lược "Việt Nam hóa chiến tranh"?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Lời giải & Từ khóa trọng tâm:</div>
+                <ul>
+                    <li><b>Đó là:</b> Cuộc <span class="keyword">Tiến công chiến lược năm 1972</span> của quân dân ta.</li>
+                    <li><b>Ý nghĩa:</b> Giáng đòn nặng nề vào chiến lược "Việt Nam hóa chiến tranh", buộc Mĩ phải tuyên bố "Mĩ hóa" trở lại (thừa nhận thất bại) và chấp nhận ngồi vào bàn đàm phán Hiệp định Pa-ri.</li>
+                </ul>
             </div>
-        </section>
-        <!-- CHƯƠNG 3 -->
-        <section class="grade-section">
-            <h2 class="grade-title">📌 III. CÔNG CUỘC ĐỔI MỚI ĐẤT NƯỚC (TỪ TỔNG KHỞI NGHĨA KINH TẾ)</h2>
+        </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>1. Hoàn cảnh & Đường lối Đổi mới (Đại hội VI - 12/1986)</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p><strong>Hoàn cảnh:</strong> Đất nước lâm vào khủng hoảng kinh tế - xã hội trầm trọng do mô hình bao cấp kéo dài + sự bao vây cấm vận của đế quốc.</p>
-                    <p><strong>Bản chất Đổi mới:</strong> Đổi mới không phải là thay đổi mục tiêu CNXH, mà là **làm cho mục tiêu CNXH được thực hiện có hiệu quả hơn**.</p>
-                    <p><strong>Nội dung trọng tâm:</strong></p>
-                    <ul>
-                        <li><strong>Trọng tâm:</strong> Đổi mới về KINH TẾ (Phát triển kinh tế hàng hóa nhiều thành phần, xóa bỏ cơ chế tập trung bao cấp).</li>
-                        <li>Gắn liền đổi mới Kinh tế với đổi mới Chính trị (đi từng bước vững chắc).</li>
-                    </ul>
-                    <div class="exercise-box">
-                        🎯 <strong>BẪY THI THPT:</strong> Đề thi hỏi <em>"Trọng tâm của công cuộc Đổi mới ở Việt Nam là gì?"</em> ➔ Bắt buộc chọn: **Đổi mới Kinh tế** (Không chọn Đổi mới Chính trị làm trọng tâm).
-                    </div>
-                </div>
+        <div class="qa-block">
+            <div class="question-title">Câu 9: Điểm giống nhau và khác nhau cơ bản giữa Hiệp định Giơ-ne-vơ (1954) và Hiệp định Pa-ri (1973)?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Lời giải & Từ khóa trọng tâm:</div>
+                <ul>
+                    <li><b>Điểm giống nhau:</b> Đều là các văn bản pháp lý quốc tế ghi nhận các <span class="keyword">Quyền dân tộc cơ bản</span> của Việt Nam (Độc lập, chủ quyền, thống nhất và toàn vẹn lãnh thổ).</li>
+                    <li><b>Điểm khác nhau quan trọng:</b>
+                        <br>- Hiệp định Giơ-ne-vơ 1954: Quy định tập kết, chuyển quân, <span class="keyword">xẻ đôi đất nước</span> thành 2 miền tạm thời.
+                        <br>- Hiệp định Pa-ri 1973: Buộc quân Mĩ và đồng minh <span class="keyword">rút hết về nước</span>, nhưng lực lượng vũ trang ta vẫn giữ nguyên tại chỗ ở miền Nam ("Mĩ cút" tạo tiền đề cho "Đánh cho Ngụy nhào").
+                    </li>
+                </ul>
             </div>
+        </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>2. Thành tựu Đổi mới</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <ul>
-                        <li>Đưa đất nước thoát khỏi khủng hoảng kinh tế, lạm phát được kiềm chế.</li>
-                        <li>Chuyển từ nước thiếu ăn thành nước xuất khẩu gạo hàng đầu thế giới.</li>
-                        <li>Mở rộng quan hệ đối ngoại, hội nhập quốc tế sâu rộng.</li>
-                    </ul>
-                </div>
+        <div class="qa-block">
+            <div class="question-title">Câu 10: Nguồn gốc / Nguyên nhân quyết định nhất dẫn đến thắng lợi lịch sử của cuộc Kháng chiến chống Mĩ cứu nước (1954 - 1975)?</div>
+            <div class="answer-box">
+                <div class="answer-title">📌 Lời giải & Từ khóa trọng tâm:</div>
+                <ul>
+                    <li><b>Nguyên nhân quyết định:</b> Sự lãnh đạo đúng đắn, sáng tạo của <span class="keyword">Đảng Lao động Việt Nam</span> với đường lối chính trị, quân sự độc lập, tự chủ.</li>
+                    <li><b>Hậu phương chiến lược:</b> Miền Bắc xã hội chủ nghĩa luôn là hậu phương lớn, cung cấp sức người sức của cho tiền tuyến miền Nam.</li>
+                </ul>
             </div>
-        </section>
-        <!-- CHƯƠNG 4 -->
-        <section class="grade-section">
-            <h2 class="grade-title">📌 IV. QUAN HỆ QUỐC TẾ & BẢNG SO SÁNH THI THPT</h2>
+        </div>
+    </div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>1. Trật tự thế giới qua các thời kỳ</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <ul>
-                        <li><strong>Trật tự 2 cực I-an-ta (1945 - 1991):</strong> Do Mỹ và Liên Xô đứng đầu, đặc trưng bởi Chiến tranh Lạnh.</li>
-                        <li><strong>Sự sụp đổ của Trật tự 2 cực (1991):</strong> Liên Xô tan rã, Chiến tranh Lạnh chấm dứt.</li>
-                        <li><strong>Xu thế sau Chiến tranh Lạnh:</strong> Phát triển theo xu thế <strong>Đa cực</strong>, lấy <strong>Phát triển Kinh tế</strong> làm trung tâm.</li>
-                    </ul>
-                </div>
-            </div>
+</div>
 
-            <div class="topic-card">
-                <div class="topic-header">
-                    <h3>2. Bảng so sánh mốc sự kiện hay gài bẫy nhất</h3>
-                    <label class="check-done"><input type="checkbox"> Đã học</label>
-                </div>
-                <div class="topic-content">
-                    <p>Hãy ghi nhớ kỹ các từ khóa phân biệt:</p>
-                    <ul>
-                        <li><strong>Kế hoạch Nava (1953):</strong> Nhằm "xoay chuyển cục diện chiến tranh" ➔ Bị Điện Biên Phủ đập tan.</li>
-                        <li><strong>Hiệp định Giơ-ne-vơ (1954):</strong> Pháp thừa nhận các quyền dân tộc cơ bản của 3 nước Đông Dương.</li>
-                        <li><strong>Hiệp định Pari (1973):</strong> "Mỹ cút" (Mỹ rút quân về nước, tạo bước ngoặt "đánh cho Ngụy nhào").</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-    </div> <!-- Đóng math-container -->
-
-    <script>
-        function toggleTheme() {
-            document.body.classList.toggle('dark-mode');
-            let btn = document.getElementById('theme-toggle');
-            if (document.body.classList.contains('dark-mode')) {
-                btn.textContent = '☀️ Chế độ sáng';
-            } else {
-                btn.textContent = '🌙 Chế độ tối';
-            }
-        }
-
-        function searchTopic() {
-            let input = document.getElementById('search-input').value.toLowerCase().trim();
-            let cards = document.getElementsByClassName('topic-card');
-
-            for (let i = 0; i < cards.length; i++) {
-                let text = cards[i].innerText.toLowerCase();
-                if (text.includes(input)) {
-                    cards[i].style.display = "block";
-                } else {
-                    cards[i].style.display = "none";
-                }
-            }
-        }
-    </script>
 </body>
 </html>
